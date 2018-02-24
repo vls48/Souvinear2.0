@@ -1,0 +1,79 @@
+<!-- PAGE CONTENT -->
+
+		<!-- Portrait View Start -->
+		<div class="port_wrap">        
+<!--
+			<div class="nav">
+				<img src="graphics/nav.png" alt="Nav">
+                <form action='php/logout_processing.php' method='post'>
+    <input type='submit' name='submit' value='Log Out'>
+    </form>
+			</div>
+-->
+			<div class="upcoming">
+				<h2>Upcoming Events</h2>
+				<div class="upcoming_events">
+					<h4>You don't have any upcoming events!</h4>
+					<img src="graphics/hotspot-purple.svg" alt="Hotspot Icon">
+				</div>
+			</div>
+
+            <a href="#/add-entry">
+                <div class="plus_button">
+                    <img src="graphics/add-button.svg" alt="Plus Button">
+                </div>
+            </a>
+
+			<div class="my_journal" ng-controller="mainCtrl">
+				<h2>My Entries</h2>
+                
+                <div class="entries">
+					<h4>You don't have any journal entries!</h4>
+					<h4>Why not start one now?</h4>
+					<h6>Click the add button below</h6>
+				</div>
+                
+				<div ng-repeat="x in entries">
+                    
+                    
+					<div class="flex" id="entry_flex">
+                       
+                    <div>
+                    <form ng-controller="editCtrl" method="post" id="edit_entry" >
+                        <p>
+                          <input type="text" name="headliner" id="headliner" ng-model="headliner" value="{{ x.HEADLINER}}" class="uneeded">
+                          </p>   
+                        <p>
+                          <input type="date" name="concert_date" id="concert_date" ng-model="concert_date" value="{{ x.CONCERT_DATE }}" class="uneeded">
+                        </p>                 
+
+                        <input type="submit" name="submit" id="concert_edit" value="Edit">
+                    </form>
+                    </div>
+                        
+                        <div class="concert_info">
+						<h6>{{ x.HEADLINER}}</h6>
+						<h6>{{ x.CONCERT_DATE }}</h6>
+						<h6>{{ x.VENUE }}</h6>
+                        </div>
+                        
+                        <div>
+                        <form>
+                        <button type="submit" name="submit">
+                            <p>
+                          <input type="text" name="headliner" id="headliner" value="{{ x.HEADLINER}}" class="uneeded">
+                          </p>   
+                        <p>
+                          <input type="date" name="concert_date" id="concert_date" value="{{ x.CONCERT_DATE }}" class="uneeded">
+                        </p>                 
+
+					   <img class="legend" src="graphics/legend.jpeg" alt="John Legend">
+                            </button>
+                            </form>
+                    </div>
+            
+				</div>
+
+			</div>
+		</div>
+		<!-- Portrait View End  -->
