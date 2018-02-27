@@ -756,7 +756,7 @@ body {
   width: 100%;
   z-index: 0; }
 
-.modal {
+/* .modal {
   background-color: #FFF;
   border-radius: 3px;
   bottom: 50%;
@@ -770,7 +770,7 @@ body {
   transition: all 600ms ease-in-out;
   visibility: hidden;
   width: 100%;
-  z-index: 999; }
+  z-index: 999; } */
 
 .btn_spot_modal_wrap {
   width: 100%;
