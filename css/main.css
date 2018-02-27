@@ -5,10 +5,6 @@
 a {
   text-decoration: none !important; }
 
-.inactive{
-  display: none;
-}
-
 .intro_wrap {
   display: flex;
   justify-content: center;
@@ -16,9 +12,10 @@ a {
   flex-direction: column; }
   .intro_wrap h3 {
     font-family: 'Averia Sans Libre', cursive;
+    font-weight: 100;
     font-size: 3em;
     margin: 0;
-    margin-top: 2rem;
+    margin-top: 0rem;
     color: #371443; }
 
 .form-wrap {
@@ -27,7 +24,7 @@ a {
   align-items: center;
   flex-direction: column;
   margin: 0;
-  margin-top: 3.7rem;
+  margin-top: 1.5rem;
   margin-bottom: 3rem; }
 
 .form-group_1 {
@@ -128,7 +125,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 3rem;
+  margin-top: 1rem;
   width: 100%; }
   .log-in_wrap .log-in {
     padding: 0;
@@ -136,7 +133,7 @@ a {
     width: 12rem;
     border: none;
     background-image: linear-gradient(bottom, #2dd5cc 0%, #2dd5cc 100%);
-    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.5);
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
     box-shadow: 0px 4px 0px #2FB8BA, 0px 4px 0px rgba(0, 0, 0, 0.4), inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px 0px 3px rgba(255, 255, 255, 0.5); }
     .log-in_wrap .log-in h4 {
       margin: 0;
@@ -167,7 +164,7 @@ a {
     font-family: 'Muli', sans-serif;
     font-style: italic;
     font-size: 0.9em;
-    padding-left: 0.8rem; }
+    margin-left: -9.3rem; }
 
 .bottom_bar_wrap {
   display: flex;
@@ -236,7 +233,7 @@ a {
       font-family: 'Averia Sans Libre', cursive;
       font-size: 3.3em;
       margin: 0;
-      margin-top: 2.5rem;
+      margin-top: 0rem;
       color: #371443; }
   .form_wrap {
     display: flex;
@@ -266,7 +263,7 @@ a {
   .form-group_2 {
     position: relative;
     margin: 0;
-    margin-bottom: 2rem; }
+    bottom-margin: 2rem; }
     .form-group_2 label {
       position: absolute;
       font-family: 'Muli', sans-serif;
@@ -315,7 +312,7 @@ a {
       font-family: 'Averia Sans Libre', cursive;
       font-size: 4em;
       margin: 0;
-      margin-top: 2.5rem;
+      margin-top: 0rem;
       color: #371443; }
   .form_wrap {
     display: flex;
@@ -362,7 +359,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 7.5rem; }
+    margin-top: 4.3rem; }
     .log-in_wrap .log-in {
       border-radius: 50px;
       width: 67%;
@@ -411,6 +408,15 @@ a {
 
 .cls-5_five {
   letter-spacing: -0.01em; }
+
+.form-wrap_ac {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0;
+  margin-top: 0rem;
+  margin-bottom: 3rem; }
 
 .form-group_1_ac {
   position: relative;
@@ -508,12 +514,14 @@ a {
 
 .no_account_wrap_ac {
   display: flex;
-  justify-content: flex-start; }
+  justify-content: flex-start;
+  margin-left: -8rem;
+  margin-top: 2rem;
+  z-index: 100; }
   .no_account_wrap_ac h4 {
     width: 100%;
     position: fixed;
-    bottom: 2.3rem;
-    left: 0.7rem;
+    bottom: 2rem;
     color: white;
     z-index: 100;
     font-family: 'Muli', sans-serif;
@@ -593,6 +601,9 @@ a {
   text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.5);
   box-shadow: 0px 4px 0px #248d8f, 0px 4px 0px rgba(0, 0, 0, 0.4), inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px 0px 3px rgba(255, 255, 255, 0.5); }
 
+.port_wrap {
+  padding-top: 7.5rem; }
+
 .spotify_pin_wrap {
   width: 100%;
   background-color: #ededf7;
@@ -617,9 +628,7 @@ a {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 100%; 
-  padding-top: 130px;
-}
+  width: 100%; }
   .spotify_pin_intro h3 {
     font-family: 'Averia Sans Libre', cursive;
     font-size: 1.5em;
@@ -747,6 +756,21 @@ body {
   width: 100%;
   z-index: 0; }
 
+.modal {
+  background-color: #FFF;
+  border-radius: 3px;
+  bottom: 50%;
+  left: 0;
+  max-width: 380px;
+  margin: 0 auto;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  transition: all 600ms ease-in-out;
+  visibility: hidden;
+  width: 100%;
+  z-index: 999; }
 
 .btn_spot_modal_wrap {
   width: 100%;
@@ -807,7 +831,7 @@ body {
     font-family: 'Averia Sans Libre', cursive;
     font-size: 1.3em;
     font-weight: 100;
-    margin-top: 30%;
+    margin-top: 0%;
     color: #371443; }
 
 .login-container {
@@ -843,7 +867,7 @@ body {
   background-image: linear-gradient(bottom, #2dd5cc 0%, #2dd5cc 100%);
   text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.5);
   box-shadow: 0px 4px 0px #2FB8BA, 0px 4px 0px rgba(0, 0, 0, 0.4), inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px 0px 3px rgba(255, 255, 255, 0.5);
-  margin: 3.5rem 0 0 0;
+  margin: 2rem 0 0 0;
   font-family: 'Muli', sans-serif;
   font-weight: 300;
   font-size: 1em;
@@ -901,7 +925,6 @@ body {
   align-items: center; }
 
 .pinned_container {
-    padding-top: 95px;
   margin-bottom: 1.2rem; }
   .pinned_container .pin_flex {
     display: flex;
@@ -1066,17 +1089,18 @@ body {
   margin-top: 1rem;
   margin-bottom: 2rem; }
 
-.see-more-btn, .button-modal {
+.see-more-btn {
   border-radius: 50px;
   width: 11rem;
-  height: 3rem;
+  height: 2.7rem;
   border: none;
-  background: linear-gradient(to bottom, #2dd5cc 0%, #2dd5cc 100%);
+  background-image: linear-gradient(bottom, #2dd5cc 0%, #2dd5cc 100%);
   text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.5);
   box-shadow: 0px 4px 0px #2FB8BA, 0px 4px 0px rgba(0, 0, 0, 0.4), inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px 0px 3px rgba(255, 255, 255, 0.5);
   font-family: 'Muli', sans-serif;
   font-weight: 300;
   font-size: 1em;
+  font-style: italic;
   color: #371443; }
 
 .see-more-btn:active {
@@ -1097,7 +1121,7 @@ html, body {
   font-family: 'Muli', sans-serif;
   position: fixed;
   /* Stay in place */
-  z-index: 100;
+  z-index: 1;
   /* Sit on top */
   left: 0;
   top: 0;
@@ -1110,9 +1134,7 @@ html, body {
   background-color: black;
   /* Fallback color */
   background-color: rgba(46, 25, 54, 0.7);
-  /* Black w/ opacity */ 
-}
-  
+  /* Black w/ opacity */ }
 
 .modal h1 {
   font-weight: 600;
@@ -1136,31 +1158,6 @@ html, body {
   /* Could be more or less, depending on screen size */
   min-height: 300px;
   box-shadow: 0 5px 25px rgba(46, 25, 54, 0.27); }
-
-  @-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
-  @-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
-  @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
-  
-  .fade-in {
-    opacity: 0;  /* make things invisible upon start */
-    -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
-    -moz-animation:fadeIn ease-in 1;
-    animation:fadeIn ease-in 1;
-  
-    -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
-    -moz-animation-fill-mode:forwards;
-    animation-fill-mode:forwards;
-  
-    -webkit-animation-duration:.5s;
-    -moz-animation-duration:.5s;
-    animation-duration:.5s;
-  }
-  
-  .fade-in.one {
-    -webkit-animation-delay: 0;
-    -moz-animation-delay: 0;
-    animation-delay: 0;
-  }
 
 .slider {
   margin: 0 auto;
@@ -1251,32 +1248,142 @@ svg {
   display: block;
   margin: auto; }
 
-.profile_button, .button-modal {
-  padding: 15px;
-}
-
-button .add{
-width: 200px;
-}  
-
-.profile_delete{
-  color: #aaa;
-  padding: 20px;
-}
+button {
+  border-radius: 25px;
+  background-color: #2DD5CC;
+  font-size: 1rem;
+  font-weight: 500;
+  min-width: 140px;
+  box-shadow: 0px 3px 0px #23B8BB;
+  border: #155658; }
 
 .bn-align {
   padding: 15px;
   display: flex;
   justify-content: center; }
 
+#gather {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 7.75rem; }
+  #gather .new-entry-bar {
+    background-color: #371443;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem; }
+    #gather .new-entry-bar h5 {
+      color: white;
+      font-family: 'Muli', sans-serif;
+      font-size: 1em;
+      font-weight: 100;
+      margin: 0.4rem 0 0.4rem 0;
+      top: 0; }
+  #gather .entry-container-add {
+    width: 80%;
+    margin-top: 0.75rem; }
+    #gather .entry-container-add input {
+      height: 2.25rem;
+      width: 95%;
+      background-color: #ededfa;
+      border-top-right-radius: 40px;
+      border-bottom-right-radius: 40px;
+      border-top-left-radius: 25px;
+      border-bottom-left-radius: 25px;
+      border: solid 1px #D5D5E0;
+      padding-left: 3rem; }
+    #gather .entry-container-add input::placeholder {
+      font-family: 'Muli', sans-serif;
+      padding-left: 0rem; }
+    #gather .entry-container-add textarea {
+      width: 95%;
+      border: solid 1px #D5D5E0;
+      background-color: #ededfa;
+      height: 10rem;
+      border-radius: 7.5px;
+      padding-left: 3rem; }
+    #gather .entry-container-add textarea::placeholder {
+      font-family: 'Muli', sans-serif;
+      padding-left: 0rem; }
+    #gather .entry-container-add .input-icons-container .background-icon {
+      position: absolute;
+      width: 40px;
+      height: 40px; }
+    #gather .entry-container-add .input-icons-container .head {
+      margin-top: -0.1rem; }
+
+#save-entry-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.3rem;
+  margin-bottom: 2rem; }
+  #save-entry-container button {
+    width: 14rem;
+    height: 2.5rem;
+    position: relative;
+    font-family: 'Muli', sans-serif;
+    font-size: 1.3em;
+    color: #371443;
+    font-style: italic;
+    padding-left: 2.25rem; }
+    #save-entry-container button img {
+      position: absolute;
+      width: 27.5px;
+      height: 27.5px;
+      margin-left: -11.5rem; }
+
+.add_entry_cancel {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 1.5rem;
+  padding-top: 1.5rem; }
+  .add_entry_cancel a {
+    font-family: 'Muli', sans-serif;
+    font-weight: 100;
+    font-style: italic;
+    font-size: 1em;
+    color: #371443; }
+
+#collected-songs {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  #collected-songs h4 {
+    font-family: 'Averia Sans Libre', cursive;
+    font-weight: 100;
+    font-size: 1.35em;
+    color: #371443;
+    margin: 1rem 0 0 0; }
+
+#collected-badges {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  #collected-badges h4 {
+    font-family: 'Averia Sans Libre', cursive;
+    font-weight: 100;
+    font-size: 1.35em;
+    color: #371443;
+    margin: 1rem 0 1rem 0; }
+
+.badge_temp_entry {
+  display: flex;
+  justify-content: space-around; }
+
 .profile {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 100%; 
-  padding-top: 120px;
-  }
+  width: 100%; }
 
 .user_info {
   margin-top: 1rem; }
@@ -1403,10 +1510,6 @@ width: 200px;
 .nav img {
   width: 100%; }
 
-.upcoming{
-    padding-top: 80px;
-}
-
 .upcoming h2 {
   font-family: 'Averia Sans Libre', cursive;
   margin: 0;
@@ -1458,7 +1561,7 @@ width: 200px;
     font-style: italic;
     font-size: 0.9em; }
   .upcoming_events img {
-    width: 45px;
+    width: 20%;
     margin-top: 0;
     margin-bottom: 15px; }
 
@@ -1486,7 +1589,3 @@ width: 200px;
   position: fixed;
   display: flex;
   justify-content: flex-end; }
-
-.uneeded{
-    display: none;
-}
