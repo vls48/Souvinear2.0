@@ -47,7 +47,7 @@
 //});
 //
 //spotifyPlayer.init();
-    var templateSource = document.getElementById('results-template').innerHTML
+   var templateSource = document.getElementById('results-template').innerHTML
    var resultsPlaceholder = document.getElementById('results');
    var template = Handlebars.compile(templateSource);
    var playingCssClass = 'playing';
