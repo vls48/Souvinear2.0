@@ -137,7 +137,7 @@ app.config(['$routeProvider',
             // $scope.$digest();
             break;
         case '/pin':
-            $scope.navBoolean = true;
+            $scope.navBoolean = false;
             console.log(navBoolean);
             break;
         default:
