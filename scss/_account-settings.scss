@@ -44,7 +44,7 @@
 		font-weight: 100;
 		font-size: 1.2em;
 		margin-top: 2rem;
-		margin-bottom: 0;
+		margin-bottom: -0.5rem;
 	}
 }
 
@@ -157,6 +157,223 @@
 	font-style: italic;
 	font-weight: 100;
 }
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 375px) {
+.profile {
+	.user_info {
+		margin-top: 1rem;
+		h4 {
+			font-size: 1.5em;
+		}
+	}
+}
+
+
+
+.user-pin {
+	h2 {
+		font-size: 1.35em;
+		margin-top: 2rem;
+		margin-bottom: -0.5rem;
+	}
+}
+
+	.user_info {
+		.user_flex {
+			height: 85px;
+			margin-bottom: 2px;
+			padding-left: 6rem;
+			h6 {
+				font-family: 'Muli', sans-serif;
+				font-size: 1.1em;
+				margin: 0;
+				font-weight: 300;
+				margin-bottom: 5px;
+				margin-left: 0;
+				color: #371443;
+			}
+			h6 + h6 {
+				font-size: 0.9em;
+			}
+		}
+		.user_temp {
+			width: 85px;
+			height: 85px;
+			position: absolute;
+			margin-top: -5.5rem;
+			left: 0;
+		}
+		.user_edit {
+			width: 35px;
+			position: absolute;
+			margin-top: -2.7rem;
+			right: 1.1rem;
+		}
+	}
+
+.button_section {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 100%;
+	margin-top: 1.25rem;
+}
+
+.profile_spot_button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	color: #371443;
+	margin-top: 1.15rem;
+    padding: 20px 20px 20px 20px;
+    font-size: 1.1em;
+    font-style: italic;
+    img {
+    	width: 45px;
+    	height: 45px;
+		margin: 0.3rem 0.8rem 0.3rem 0.8rem;
+    }
+}
+
+.profile_reset_button {
+	margin-top: 2rem;
+    padding: 20px 20px 20px 20px;
+    font-size: 1.1em;
+    font-style: italic;
+    color: #371443;
+}
+
+.delete_account_btn {
+	margin-top: 1.5rem;
+	padding-bottom: 1.5rem;
+
+	font-size: 0.9em;
+	font-weight: 100;
+}
+
+}
+
+
+
+
+
+
+
+@media screen and (min-width: 414px) {
+.profile {
+	.user_info {
+		margin-top: 1rem;
+		h4 {
+			font-size: 1.7em;
+		}
+	}
+}
+
+
+
+.user-pin {
+	h2 {
+		font-size: 1.4em;
+		margin-top: 2rem;
+		margin-bottom: -0.5rem;
+	}
+}
+
+	.user_info {
+		.user_flex {
+			height: 85px;
+			margin-bottom: 2px;
+			padding-left: 6rem;
+			h6 {
+				font-family: 'Muli', sans-serif;
+				font-size: 1.15em;
+				margin: 0;
+				font-weight: 300;
+				margin-bottom: 5px;
+				margin-left: 0;
+				color: #371443;
+			}
+			h6 + h6 {
+				font-size: 0.9em;
+			}
+		}
+		.user_temp {
+			width: 85px;
+			height: 85px;
+			position: absolute;
+			margin-top: -5.5rem;
+			left: 0;
+		}
+		.user_edit {
+			width: 35px;
+			position: absolute;
+			margin-top: -2.7rem;
+			right: 1.5rem;
+		}
+	}
+
+.button_section {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 100%;
+	margin-top: 1.25rem;
+}
+
+.profile_spot_button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	color: #371443;
+	margin-top: 1.15rem;
+    padding: 25px 25px 25px 25px;
+    font-size: 1.3em;
+    font-style: italic;
+    img {
+    	width: 45px;
+    	height: 45px;
+		margin: 0.3rem 0.8rem 0.3rem 0.8rem;
+    }
+}
+
+.profile_reset_button {
+	margin-top: 2rem;
+    padding: 17.5px 17.5px 17.5px 17.5px;
+    font-size: 1.3em;
+    font-style: italic;
+    color: #371443;
+}
+
+.delete_account_btn {
+	margin-top: 1.5rem;
+	padding-bottom: 1.5rem;
+
+	font-size: 0.9em;
+	font-weight: 100;
+}
+
+}
+
+
+
+
+
+
+
+
+
 
 
 

@@ -8,6 +8,7 @@
 		h2 {
 			color: #371443;
 			font-family: 'Averia Sans Libre', cursive;
+			font-weight: 100;
 			font-size: 1.3em;
 			margin-bottom: 0;
 		}
@@ -44,7 +45,9 @@
 				margin-bottom: 5px;
 				margin-left: 0;
 				color: #371443;
-
+			}
+			h6 + h6 {
+				font-size: 0.75em;
 			}
 		}
 		.temp {
@@ -79,6 +82,7 @@
 			color: #371443;
 			font-family: 'Averia Sans Libre', cursive;
 			font-size: 1.3em;
+			font-weight: 100;
 			margin-bottom: 1rem;
 		}
 	}
@@ -114,7 +118,9 @@
 				margin-bottom: 5px;
 				margin-left: 0;
 				color: #371443;
-
+			}
+			h6 + h6 {
+				font-size: 0.75em;
 			}
 		}
 		.temp {
@@ -147,6 +153,7 @@
 			color: #371443;
 			font-family: 'Averia Sans Libre', cursive;
 			font-size: 1.3em;
+			font-weight: 100;
 			margin-bottom: 1rem;
 		}
 	}
@@ -182,7 +189,9 @@
 				margin-bottom: 5px;
 				margin-left: 0;
 				color: #371443;
-
+			}
+			h6 + h6 {
+				font-size: 0.75em;
 			}
 		}
 		.temp {
@@ -421,15 +430,460 @@ button{
 
 
 
-@media screen and (min-width: 375px) {
 
+
+
+
+
+
+
+
+@media screen and (min-width: 375px) {
+.pinned_container {
+	margin-bottom: 1.2rem;
+	.pin_flex {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		h2 {
+			color: #371443;
+			font-family: 'Averia Sans Libre', cursive;
+			font-weight: 100;
+			font-size: 1.5em;
+			margin-bottom: 0;
+		}
+	}
+	h5 {
+		font-family: 'Muli', sans-serif;
+		font-size: 0.8em;
+		padding-left: 1rem;
+		margin-top: 0;
+		margin-bottom: 0.2rem;
+		color: #371443;
+	}
+	.song_info {
+		position: relative;
+		.song_flex {
+			width: 100%;
+			height: 70px;
+
+			background-color: #e2e2eb;
+			margin-bottom: 2px;
+			padding-left: 6rem;
+
+			display: flex;
+			justify-content: center;
+			align-items: flex-start;
+			flex-direction: column;
+
+			background: linear-gradient(to right, #e2e2eb 75%, #D3D3E5 25%);
+			h6 {
+				font-family: 'Muli', sans-serif;
+				font-size: 1.1em;
+				margin: 0;
+				font-weight: 300;
+				margin-bottom: 5px;
+				margin-left: 0;
+				color: #371443;
+			}
+			h6 + h6 {
+				font-size: 0.9em;
+			}
+		}
+		.temp {
+			width: 70px;
+			height: 70px;
+			position: absolute;
+			margin-top: -4.5rem;
+			left: 0;
+		}
+		.swap_icon {
+			width: 35px;
+			height: 35px;
+			position: absolute;
+			margin-top: -3.4rem;
+			right: 1.7rem;
+		}
+	}
+}
+
+
+
+
+
+.uncollect_container {
+	margin-bottom: 1.2rem;
+	.uncollect_flex {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		h2 {
+			color: #371443;
+			font-family: 'Averia Sans Libre', cursive;
+			font-size: 1.5em;
+			font-weight: 100;
+			margin-bottom: 1rem;
+		}
+	}
+	h5 {
+		font-family: 'Muli', sans-serif;
+		font-size: 0.8em;
+		padding-left: 1rem;
+		margin-top: 0;
+		margin-bottom: 0.2rem;
+		color: #371443;
+	}
+	.song_info {
+		position: relative;
+		.song_flex {
+			width: 100%;
+			height: 70px;
+
+			background-color: #e2e2eb;
+			margin-bottom: 2px;
+			padding-left: 6rem;
+
+			display: flex;
+			justify-content: center;
+			align-items: flex-start;
+			flex-direction: column;
+
+			background: linear-gradient(to right, #e2e2eb 75%, #D3D3E5 25%);
+			h6 {
+				font-family: 'Muli', sans-serif;
+				font-size: 1.1em;
+				margin: 0;
+				font-weight: 300;
+				margin-bottom: 5px;
+				margin-left: 0;
+				color: #371443;
+			}
+			h6 + h6 {
+				font-size: 0.9em;
+			}
+		}
+		.temp {
+			width: 70px;
+			height: 70px;
+			position: absolute;
+			margin-top: -4.5rem;
+			left: 0;
+		}
+		.add {
+			width: 35px;
+			position: absolute;
+			margin-top: -2.7rem;
+			right: 2.4rem;
+		}
+	}
+}
+
+
+
+
+.collect_container {
+	margin-bottom: 1.2rem;
+	.collect_flex {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		h2 {
+			color: #371443;
+			font-family: 'Averia Sans Libre', cursive;
+			font-size: 1.5em;
+			font-weight: 100;
+			margin-bottom: 1rem;
+		}
+	}
+	h5 {
+		font-family: 'Muli', sans-serif;
+		font-size: 0.8em;
+		padding-left: 1rem;
+		margin-top: 0;
+		margin-bottom: 0.2rem;
+		color: #371443;
+	}
+	.song_info {
+		position: relative;
+		.song_flex {
+			width: 100%;
+			height: 70px;
+
+			background-color: #e2e2eb;
+			margin-bottom: 2px;
+			padding-left: 6rem;
+
+			display: flex;
+			justify-content: center;
+			align-items: flex-start;
+			flex-direction: column;
+
+			background: linear-gradient(to right, #e2e2eb 75%, #D3D3E5 25%);
+			h6 {
+				font-family: 'Muli', sans-serif;
+				font-size: 1.1em;
+				margin: 0;
+				font-weight: 300;
+				margin-bottom: 5px;
+				margin-left: 0;
+				color: #371443;
+			}
+			h6 + h6 {
+				font-size: 0.9em;
+			}
+		}
+		.temp {
+			width: 70px;
+			height: 70px;
+			position: absolute;
+			margin-top: -4.5rem;
+			left: 0;
+		}
+		.add {
+			width: 35px;
+			position: absolute;
+			margin-top: -2.7rem;
+			right: 2.4rem;
+		}
+	}
+}
 
 }
+
+
+
+
+
+
 
 
 
 
 
 @media screen and (min-width: 414px) {
+.pinned_container {
+	margin-bottom: 1.2rem;
+	.pin_flex {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		h2 {
+			color: #371443;
+			font-family: 'Averia Sans Libre', cursive;
+			font-weight: 100;
+			font-size: 1.7em;
+			margin-bottom: 0;
+		}
+	}
+	h5 {
+		font-family: 'Muli', sans-serif;
+		font-size: 0.8em;
+		padding-left: 1rem;
+		margin-top: 0;
+		margin-bottom: 0.2rem;
+		color: #371443;
+	}
+	.song_info {
+		position: relative;
+		.song_flex {
+			width: 100%;
+			height: 70px;
 
+			background-color: #e2e2eb;
+			margin-bottom: 2px;
+			padding-left: 6rem;
+
+			display: flex;
+			justify-content: center;
+			align-items: flex-start;
+			flex-direction: column;
+
+			background: linear-gradient(to right, #e2e2eb 75%, #D3D3E5 25%);
+			h6 {
+				font-family: 'Muli', sans-serif;
+				font-size: 1.1em;
+				margin: 0;
+				font-weight: 300;
+				margin-bottom: 5px;
+				margin-left: 0;
+				color: #371443;
+			}
+			h6 + h6 {
+				font-size: 0.9em;
+			}
+		}
+		.temp {
+			width: 70px;
+			height: 70px;
+			position: absolute;
+			margin-top: -4.5rem;
+			left: 0;
+		}
+		.swap_icon {
+			width: 35px;
+			height: 35px;
+			position: absolute;
+			margin-top: -3.4rem;
+			right: 2rem;
+		}
+	}
 }
+
+
+
+
+
+.uncollect_container {
+	margin-bottom: 1.2rem;
+	.uncollect_flex {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		h2 {
+			color: #371443;
+			font-family: 'Averia Sans Libre', cursive;
+			font-size: 1.7em;
+			font-weight: 100;
+			margin-bottom: 1rem;
+		}
+	}
+	h5 {
+		font-family: 'Muli', sans-serif;
+		font-size: 0.8em;
+		padding-left: 1rem;
+		margin-top: 0;
+		margin-bottom: 0.2rem;
+		color: #371443;
+	}
+	.song_info {
+		position: relative;
+		.song_flex {
+			width: 100%;
+			height: 70px;
+
+			background-color: #e2e2eb;
+			margin-bottom: 2px;
+			padding-left: 6rem;
+
+			display: flex;
+			justify-content: center;
+			align-items: flex-start;
+			flex-direction: column;
+
+			background: linear-gradient(to right, #e2e2eb 75%, #D3D3E5 25%);
+			h6 {
+				font-family: 'Muli', sans-serif;
+				font-size: 1.1em;
+				margin: 0;
+				font-weight: 300;
+				margin-bottom: 5px;
+				margin-left: 0;
+				color: #371443;
+			}
+			h6 + h6 {
+				font-size: 0.9em;
+			}
+		}
+		.temp {
+			width: 70px;
+			height: 70px;
+			position: absolute;
+			margin-top: -4.5rem;
+			left: 0;
+		}
+		.add {
+			width: 35px;
+			position: absolute;
+			margin-top: -2.7rem;
+			right: 2.7rem;
+		}
+	}
+}
+
+
+
+
+.collect_container {
+	margin-bottom: 1.2rem;
+	.collect_flex {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		h2 {
+			color: #371443;
+			font-family: 'Averia Sans Libre', cursive;
+			font-size: 1.7em;
+			font-weight: 100;
+			margin-bottom: 1rem;
+		}
+	}
+	h5 {
+		font-family: 'Muli', sans-serif;
+		font-size: 0.8em;
+		padding-left: 1rem;
+		margin-top: 0;
+		margin-bottom: 0.2rem;
+		color: #371443;
+	}
+	.song_info {
+		position: relative;
+		.song_flex {
+			width: 100%;
+			height: 70px;
+
+			background-color: #e2e2eb;
+			margin-bottom: 2px;
+			padding-left: 6rem;
+
+			display: flex;
+			justify-content: center;
+			align-items: flex-start;
+			flex-direction: column;
+
+			background: linear-gradient(to right, #e2e2eb 75%, #D3D3E5 25%);
+			h6 {
+				font-family: 'Muli', sans-serif;
+				font-size: 1.1em;
+				margin: 0;
+				font-weight: 300;
+				margin-bottom: 5px;
+				margin-left: 0;
+				color: #371443;
+			}
+			h6 + h6 {
+				font-size: 0.9em;
+			}
+		}
+		.temp {
+			width: 70px;
+			height: 70px;
+			position: absolute;
+			margin-top: -4.5rem;
+			left: 0;
+		}
+		.add {
+			width: 35px;
+			position: absolute;
+			margin-top: -2.7rem;
+			right: 2.7rem;
+		}
+	}
+}
+}
+
+
+
+
+
+
+
+
+
+
+

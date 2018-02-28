@@ -134,7 +134,7 @@
 
 			background-color: #e2e2eb;
 			margin-bottom: 2px;
-			padding-left: 6rem;
+			padding-left: 5rem;
 
 			display: flex;
 			justify-content: center;
@@ -172,15 +172,132 @@
 }
 
 
+@media screen and (min-width: 375px) {
+
+.spotify_pin_intro {
+	h3 {
+		font-size: 2em;
+	}
+	h4 {
+		font-size: 1.15em;
+	}
+}
+
+
+.spotify_search_bar {
+  img {
+    margin-top: 0.1rem;
+    margin-left: 12rem;
+  }
+  input {
+    width: 15.5rem;
+    height: 2.5rem;
+    padding-left: 0.5rem;
+    font-size: 1.1em;
+  }
+}
+
+.flex_connect {
+		.connect_user {
+		font-size: 1.2em;
+	}
+}
+
+
+
+.playlist_suggestions_wrap {
+	margin-bottom: 1.2rem;
+	.suggestions_flex {
+		h2 {
+			font-size: 1.25em;
+		}
+	}
+	h5 {
+		font-size: 0.8em;
+	}
+	.song_info {
+		.song_flex {
+			h6 {
+				font-family: 'Muli', sans-serif;
+				font-size: 1.1em;
+				margin: 0;
+				font-weight: 300;
+				margin-bottom: 4px;
+				margin-left: 0;
+				color: #371443;
+			}
+			h6 + h6 {
+				font-size: 0.9em;
+			}
+		}
+	}
+}
+}
 
 
 
 
+@media screen and (min-width: 414px) {
+
+.spotify_pin_intro {
+	h3 {
+		font-size: 2.2em;
+	}
+	h4 {
+		font-size: 1.25em;
+	}
+}
+
+
+.spotify_search_bar {
+  img {
+    margin-top: 0.1rem;
+    margin-left: 14.5rem;
+  }
+  input {
+    width: 18.5rem;
+    height: 2.75rem;
+    padding-left: 0.5rem;
+    font-size: 1.2em;
+  }
+}
+
+.flex_connect {
+		.connect_user {
+		font-size: 1.25em;
+	}
+}
 
 
 
-
-
+.playlist_suggestions_wrap {
+	margin-bottom: 1.2rem;
+	.suggestions_flex {
+		h2 {
+			font-size: 1.35em;
+		}
+	}
+	h5 {
+		font-size: 0.8em;
+	}
+	.song_info {
+		.song_flex {
+			h6 {
+				font-family: 'Muli', sans-serif;
+				font-size: 1.15em;
+				margin: 0;
+				font-weight: 300;
+				margin-bottom: 4px;
+				margin-left: 0;
+				color: #371443;
+			}
+			h6 + h6 {
+				font-size: 0.9em;
+			}
+		}
+	}
+}
+}
 
 
 

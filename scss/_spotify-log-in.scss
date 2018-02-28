@@ -5,10 +5,10 @@
 	align-items: center;
 	flex-direction: column;
 	width: 100%;
-	margin-top: 22%;
+	margin-top: 10%;
 	h3 {
 		  font-family: 'Averia Sans Libre', cursive;
-		  font-size: 1.1em;
+		  font-size: 1.3em;
       font-weight: 100;
 		  margin-top: 5%;
 		  color: #371443;
@@ -72,4 +72,45 @@
       text-shadow: 0px -1px 0px rgba(0,0,0,.5);
       box-shadow: 0px 4px 0px #248d8f, 0px 4px 0px rgba(0,0,0,.4), inset 0px 1px 0px rgba(255,255,255,.3), inset 0px 0px 3px rgba(255,255,255,.5);
     }
+
+
+
+@media screen and (min-width: 375px) {
+.spotify_wrap {
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 10%;
+  h3 {
+      font-family: 'Averia Sans Libre', cursive;
+      font-size: 1.5em;
+      font-weight: 100;
+      margin-top: 5%;
+      color: #371443;
+  }
+}
+
+.spotify_logo {
+  width: 125px;
+  height: 125px;
+}
+
+}
+
+@media screen and (min-width: 414px) {
+
+}
+
+
+
+
+
+
+
+
+
+
+
 

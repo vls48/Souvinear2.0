@@ -8,6 +8,7 @@ a {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-top: -2rem;
   h3 {
       font-family: 'Averia Sans Libre', cursive;
       font-weight: 100;
@@ -53,11 +54,12 @@ a {
     border: solid 2px #AFB0BE;
     width: 13rem;
     height: 2rem;
+    padding-left: 0.5rem;
   }
   input::placeholder {
     color: white;
     font-family: 'Muli', sans-serif;
-    padding-left: 0.5rem;
+    padding-left: 0rem;
   }
   input:focus {
     background-color: #f8669f;
@@ -90,11 +92,12 @@ a {
     border: solid 2px #AFB0BE;
     width: 13rem;
     height: 2rem;
+    padding-left: 0.5rem;
   }
   input::placeholder {
     color: white;
     font-family: 'Muli', sans-serif;
-    padding-left: 0.5rem;
+    padding-left: 0rem;
   }
   input:focus {
     background-color: #f8669f;
@@ -144,7 +147,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 1rem;
+    margin-top: 2rem;
     width: 100%;
     .log-in {
       padding: 0;
@@ -176,7 +179,7 @@ a {
 
 .no_account_wrap {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   z-index: 100;
   h4 {
     width: 100%;
@@ -188,7 +191,7 @@ a {
     font-family: 'Muli', sans-serif;
     font-style: italic;
     font-size: 0.9em;
-    margin-left: -9.3rem;
+    margin-left: 0.5rem;
   }
 }
 
@@ -209,6 +212,7 @@ a {
     bottom: -0.4rem;
     right: 2rem;
     font-family: 'Averia Sans Libre', cursive;
+    font-weight: 100;
     font-size: 1.7em;
   }
 }
@@ -301,7 +305,8 @@ a {
 .form-group_1 {
   position: relative;
   margin: 0;
-  margin-bottom: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1.35rem;
   label {
     position: absolute;
     font-family: 'Muli', sans-serif;
@@ -346,7 +351,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 4.2rem;
+    margin-top: 3.5rem;
     .log-in {
         border-radius: 50px;
         width: 12rem;
@@ -368,7 +373,7 @@ a {
   h4 {
     bottom: 2.2rem;
     font-size: 1.1em;
-    padding-left: 0.8rem;
+    padding-left: 0.1rem;
   }
 }
 
@@ -411,7 +416,8 @@ a {
   .form-group_1 {
     position: relative;
     margin: 0;
-    margin-bottom: 2.2rem;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
     label {
       position: absolute;
       font-family: 'Muli', sans-serif;
@@ -458,7 +464,7 @@ a {
       margin-top: 4.3rem;
       .log-in {
          border-radius: 50px;
-         width: 67%;
+         width: 14rem;
          border: none;
          background-color: #2dd5cc;
          h4 {
@@ -473,9 +479,9 @@ a {
 
   .no_account_wrap {
     h4 {
-      bottom: 2.3rem;
+      bottom: 2.5rem;
       font-size: 1.1em;
-      padding-left: 0.8rem;
+      padding-left: 0.1rem;
     }
   }
 

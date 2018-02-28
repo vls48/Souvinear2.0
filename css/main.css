@@ -5,15 +5,12 @@
 a {
   text-decoration: none !important; }
 
-.inactive{
-    display: none;
-  }
-
 .intro_wrap {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column; }
+  flex-direction: column;
+  margin-top: -2rem; }
   .intro_wrap h3 {
     font-family: 'Averia Sans Libre', cursive;
     font-weight: 100;
@@ -53,11 +50,12 @@ a {
     border-bottom-right-radius: 40px;
     border: solid 2px #AFB0BE;
     width: 13rem;
-    height: 2rem; }
+    height: 2rem;
+    padding-left: 0.5rem; }
   .form-group_1 input::placeholder {
     color: white;
     font-family: 'Muli', sans-serif;
-    padding-left: 0.5rem; }
+    padding-left: 0rem; }
   .form-group_1 input:focus {
     background-color: #f8669f;
     color: white;
@@ -84,11 +82,12 @@ a {
     border-bottom-right-radius: 40px;
     border: solid 2px #AFB0BE;
     width: 13rem;
-    height: 2rem; }
+    height: 2rem;
+    padding-left: 0.5rem; }
   .form-group_2 input::placeholder {
     color: white;
     font-family: 'Muli', sans-serif;
-    padding-left: 0.5rem; }
+    padding-left: 0rem; }
   .form-group_2 input:focus {
     background-color: #f8669f;
     color: white;
@@ -129,7 +128,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 1rem;
+  margin-top: 2rem;
   width: 100%; }
   .log-in_wrap .log-in {
     padding: 0;
@@ -157,7 +156,7 @@ a {
 
 .no_account_wrap {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   z-index: 100; }
   .no_account_wrap h4 {
     width: 100%;
@@ -168,7 +167,7 @@ a {
     font-family: 'Muli', sans-serif;
     font-style: italic;
     font-size: 0.9em;
-    margin-left: -9.3rem; }
+    margin-left: 0.5rem; }
 
 .bottom_bar_wrap {
   display: flex;
@@ -186,6 +185,7 @@ a {
     bottom: -0.4rem;
     right: 2rem;
     font-family: 'Averia Sans Libre', cursive;
+    font-weight: 100;
     font-size: 1.7em; }
 
 .ticket {
@@ -250,7 +250,8 @@ a {
   .form-group_1 {
     position: relative;
     margin: 0;
-    margin-bottom: 2rem; }
+    margin-top: 1rem;
+    margin-bottom: 1.35rem; }
     .form-group_1 label {
       position: absolute;
       font-family: 'Muli', sans-serif;
@@ -285,7 +286,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 4.2rem; }
+    margin-top: 3.5rem; }
     .log-in_wrap .log-in {
       border-radius: 50px;
       width: 12rem;
@@ -302,7 +303,7 @@ a {
   .no_account_wrap h4 {
     bottom: 2.2rem;
     font-size: 1.1em;
-    padding-left: 0.8rem; }
+    padding-left: 0.1rem; }
   .bottom_bar_wrap h3 {
     font-size: 2em; } }
 
@@ -329,7 +330,8 @@ a {
   .form-group_1 {
     position: relative;
     margin: 0;
-    margin-bottom: 2.2rem; }
+    margin-top: 1.5rem;
+    margin-bottom: 2rem; }
     .form-group_1 label {
       position: absolute;
       font-family: 'Muli', sans-serif;
@@ -366,7 +368,7 @@ a {
     margin-top: 4.3rem; }
     .log-in_wrap .log-in {
       border-radius: 50px;
-      width: 67%;
+      width: 14rem;
       border: none;
       background-color: #2dd5cc; }
       .log-in_wrap .log-in h4 {
@@ -376,9 +378,9 @@ a {
         font-size: 1.4em;
         color: #371443; }
   .no_account_wrap h4 {
-    bottom: 2.3rem;
+    bottom: 2.5rem;
     font-size: 1.1em;
-    padding-left: 0.8rem; }
+    padding-left: 0.1rem; }
   .bottom_bar_wrap h3 {
     font-size: 2.5em; } }
 
@@ -518,24 +520,133 @@ a {
 
 .no_account_wrap_ac {
   display: flex;
-  justify-content: flex-start;
-  margin-left: -8rem;
-  margin-top: 2rem;
+  justify-content: center;
   z-index: 100; }
   .no_account_wrap_ac h4 {
     width: 100%;
     position: fixed;
-    bottom: 2rem;
+    bottom: 2.3rem;
     color: white;
     z-index: 100;
     font-family: 'Muli', sans-serif;
     font-style: italic;
-    font-size: 0.7em; }
+    font-size: 0.75em;
+    margin-left: 0.5rem; }
 
 @media screen and (min-width: 375px) {
-  .no_account_wrap_ac h4 {
-    bottom: 2.9rem;
-    font-size: 0.8em; } }
+  .form-wrap_ac {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    margin-top: 0rem;
+    margin-bottom: 3rem; }
+  .form-group_1_ac {
+    position: relative;
+    margin: 0;
+    margin-bottom: 1.2rem; }
+    .form-group_1_ac label {
+      position: absolute;
+      font-family: 'Muli', sans-serif;
+      margin-top: -1.3rem; }
+    .form-group_1_ac img {
+      position: absolute;
+      width: 13%;
+      margin-top: 0.53rem;
+      margin-left: 12.5rem; }
+    .form-group_1_ac input {
+      background-color: #afb0be;
+      outline: none;
+      transition: background-color 350ms ease 0s;
+      color: white;
+      border-top-right-radius: 40px;
+      border-bottom-right-radius: 40px;
+      border: solid 2px #AFB0BE;
+      width: 16.5rem;
+      height: 2.5rem; }
+    .form-group_1_ac input::placeholder {
+      color: white;
+      font-family: 'Muli', sans-serif;
+      padding-left: 0.5rem; }
+    .form-group_1_ac input:focus {
+      background-color: #f8669f;
+      color: white;
+      border: solid 2px #f8669f; }
+  .form-group_2_ac {
+    position: relative;
+    margin-bottom: 1.2rem; }
+    .form-group_2_ac label {
+      position: absolute;
+      font-family: 'Muli', sans-serif;
+      margin-top: -1.3rem; }
+    .form-group_2_ac img {
+      position: absolute;
+      width: 10%;
+      margin-top: 0.35rem;
+      margin-left: 12.8rem; }
+    .form-group_2_ac input {
+      background-color: #afb0be;
+      outline: none;
+      transition: background-color 350ms ease 0s, border 350ms ease 0s;
+      color: white;
+      border-top-right-radius: 40px;
+      border-bottom-right-radius: 40px;
+      border: solid 2px #AFB0BE;
+      width: 16.5rem;
+      height: 2.5rem; }
+    .form-group_2_ac input::placeholder {
+      color: white;
+      font-family: 'Muli', sans-serif;
+      padding-left: 0.5rem; }
+    .form-group_2_ac input:focus {
+      background-color: #f8669f;
+      color: white;
+      border: solid 2px #f8669f; }
+  .form-group_3_ac {
+    position: relative;
+    margin: 0; }
+    .form-group_3_ac label {
+      position: absolute;
+      font-family: 'Muli', sans-serif;
+      margin-top: -1.3rem; }
+    .form-group_3_ac img {
+      position: absolute;
+      width: 10%;
+      margin-top: 0.35rem;
+      margin-left: 12.8rem; }
+    .form-group_3_ac input {
+      background-color: #afb0be;
+      outline: none;
+      transition: background-color 350ms ease 0s, border 350ms ease 0s;
+      color: white;
+      border-top-right-radius: 40px;
+      border-bottom-right-radius: 40px;
+      border: solid 2px #AFB0BE;
+      width: 16.5rem;
+      height: 2.5rem; }
+    .form-group_3_ac input::placeholder {
+      color: white;
+      font-family: 'Muli', sans-serif;
+      padding-left: 0.5rem; }
+    .form-group_3_ac input:focus {
+      background-color: #f8669f;
+      color: white;
+      border: solid 2px #f8669f; }
+  .no_account_wrap_ac {
+    display: flex;
+    justify-content: center;
+    z-index: 100; }
+    .no_account_wrap_ac h4 {
+      width: 100%;
+      position: fixed;
+      bottom: 2.7rem;
+      color: white;
+      z-index: 100;
+      font-family: 'Muli', sans-serif;
+      font-style: italic;
+      font-size: 0.9em;
+      margin-left: 0.5rem; } }
 
 @media screen and (min-width: 414px) {
   .no_account_wrap_ac h4 {
@@ -548,10 +659,10 @@ a {
   align-items: center;
   flex-direction: column;
   width: 100%;
-  margin-top: 22%; }
+  margin-top: 10%; }
   .spotify_wrap h3 {
     font-family: 'Averia Sans Libre', cursive;
-    font-size: 1.1em;
+    font-size: 1.3em;
     font-weight: 100;
     margin-top: 5%;
     color: #371443; }
@@ -604,6 +715,24 @@ a {
   background-image: linear-gradient(bottom, #22aaa4 0%, #22aaa4 100%);
   text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.5);
   box-shadow: 0px 4px 0px #248d8f, 0px 4px 0px rgba(0, 0, 0, 0.4), inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px 0px 3px rgba(255, 255, 255, 0.5); }
+
+@media screen and (min-width: 375px) {
+  .spotify_wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10%; }
+    .spotify_wrap h3 {
+      font-family: 'Averia Sans Libre', cursive;
+      font-size: 1.5em;
+      font-weight: 100;
+      margin-top: 5%;
+      color: #371443; }
+  .spotify_logo {
+    width: 125px;
+    height: 125px; } }
 
 .port_wrap {
   padding-top: 7.5rem; }
@@ -716,7 +845,7 @@ a {
       height: 70px;
       background-color: #e2e2eb;
       margin-bottom: 2px;
-      padding-left: 6rem;
+      padding-left: 5rem;
       display: flex;
       justify-content: center;
       align-items: flex-start;
@@ -744,6 +873,70 @@ a {
       margin-top: -2.7rem;
       right: 2rem; }
 
+@media screen and (min-width: 375px) {
+  .spotify_pin_intro h3 {
+    font-size: 2em; }
+  .spotify_pin_intro h4 {
+    font-size: 1.15em; }
+  .spotify_search_bar img {
+    margin-top: 0.1rem;
+    margin-left: 12rem; }
+  .spotify_search_bar input {
+    width: 15.5rem;
+    height: 2.5rem;
+    padding-left: 0.5rem;
+    font-size: 1.1em; }
+  .flex_connect .connect_user {
+    font-size: 1.2em; }
+  .playlist_suggestions_wrap {
+    margin-bottom: 1.2rem; }
+    .playlist_suggestions_wrap .suggestions_flex h2 {
+      font-size: 1.25em; }
+    .playlist_suggestions_wrap h5 {
+      font-size: 0.8em; }
+    .playlist_suggestions_wrap .song_info .song_flex h6 {
+      font-family: 'Muli', sans-serif;
+      font-size: 1.1em;
+      margin: 0;
+      font-weight: 300;
+      margin-bottom: 4px;
+      margin-left: 0;
+      color: #371443; }
+    .playlist_suggestions_wrap .song_info .song_flex h6 + h6 {
+      font-size: 0.9em; } }
+
+@media screen and (min-width: 414px) {
+  .spotify_pin_intro h3 {
+    font-size: 2.2em; }
+  .spotify_pin_intro h4 {
+    font-size: 1.25em; }
+  .spotify_search_bar img {
+    margin-top: 0.1rem;
+    margin-left: 14.5rem; }
+  .spotify_search_bar input {
+    width: 18.5rem;
+    height: 2.75rem;
+    padding-left: 0.5rem;
+    font-size: 1.2em; }
+  .flex_connect .connect_user {
+    font-size: 1.25em; }
+  .playlist_suggestions_wrap {
+    margin-bottom: 1.2rem; }
+    .playlist_suggestions_wrap .suggestions_flex h2 {
+      font-size: 1.35em; }
+    .playlist_suggestions_wrap h5 {
+      font-size: 0.8em; }
+    .playlist_suggestions_wrap .song_info .song_flex h6 {
+      font-family: 'Muli', sans-serif;
+      font-size: 1.15em;
+      margin: 0;
+      font-weight: 300;
+      margin-bottom: 4px;
+      margin-left: 0;
+      color: #371443; }
+    .playlist_suggestions_wrap .song_info .song_flex h6 + h6 {
+      font-size: 0.9em; } }
+
 body {
   background-color: #323a46;
   font-family: 'Open Sans', sans-serif; }
@@ -760,7 +953,7 @@ body {
   width: 100%;
   z-index: 0; }
 
-/* .modal {
+.modal {
   background-color: #FFF;
   border-radius: 3px;
   bottom: 50%;
@@ -774,7 +967,7 @@ body {
   transition: all 600ms ease-in-out;
   visibility: hidden;
   width: 100%;
-  z-index: 999; } */
+  z-index: 999; }
 
 .btn_spot_modal_wrap {
   width: 100%;
@@ -928,6 +1121,90 @@ body {
   justify-content: center;
   align-items: center; }
 
+@media screen and (min-width: 375px) {
+  .form-group_pass {
+    margin-bottom: 1.3rem; }
+    .form-group_pass img {
+      width: 30px;
+      height: 30px;
+      margin-top: 0.65rem;
+      margin-left: 13rem; }
+    .form-group_pass .email_move_down {
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      margin-top: 0.95rem;
+      margin-left: 13rem; }
+    .form-group_pass input {
+      width: 16rem;
+      height: 2.5rem;
+      font-size: 1.05em;
+      padding-left: 0.5rem; }
+    .form-group_pass input::placeholder {
+      padding-left: 0rem; }
+  .pass_reset_wrap h3 {
+    font-size: 1.5em; }
+  .btn--login {
+    border-radius: 50px;
+    width: 13rem;
+    height: 3rem;
+    border: none;
+    background-image: linear-gradient(bottom, #2dd5cc 0%, #2dd5cc 100%);
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 4px 0px #2FB8BA, 0px 4px 0px rgba(0, 0, 0, 0.4), inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px 0px 3px rgba(255, 255, 255, 0.5);
+    margin: 2.5rem 0 0 0;
+    font-family: 'Muli', sans-serif;
+    font-weight: 300;
+    font-size: 1.25em;
+    font-style: italic;
+    color: #371443; }
+  .bottom_bar_cancel_wrap h3 {
+    bottom: -0.4rem;
+    right: 2rem;
+    font-size: 1.9em; } }
+
+@media screen and (min-width: 414px) {
+  .form-group_pass {
+    margin-bottom: 1.5rem; }
+    .form-group_pass img {
+      width: 30px;
+      height: 30px;
+      margin-top: 0.65rem;
+      margin-left: 13rem; }
+    .form-group_pass .email_move_down {
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      margin-top: 0.95rem;
+      margin-left: 13rem; }
+    .form-group_pass input {
+      width: 18rem;
+      height: 2.5rem;
+      font-size: 1.15em;
+      padding-left: 0.5rem; }
+    .form-group_pass input::placeholder {
+      padding-left: 0rem; }
+  .pass_reset_wrap h3 {
+    font-size: 1.75em; }
+  .btn--login {
+    border-radius: 50px;
+    width: 14.5rem;
+    height: 3.5rem;
+    border: none;
+    background-image: linear-gradient(bottom, #2dd5cc 0%, #2dd5cc 100%);
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 4px 0px #2FB8BA, 0px 4px 0px rgba(0, 0, 0, 0.4), inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px 0px 3px rgba(255, 255, 255, 0.5);
+    margin: 3rem 0 0 0;
+    font-family: 'Muli', sans-serif;
+    font-weight: 300;
+    font-size: 1.25em;
+    font-style: italic;
+    color: #371443; }
+  .bottom_bar_cancel_wrap h3 {
+    bottom: -0.4rem;
+    right: 2rem;
+    font-size: 2.2em; } }
+
 .pinned_container {
   margin-bottom: 1.2rem; }
   .pinned_container .pin_flex {
@@ -938,6 +1215,7 @@ body {
     .pinned_container .pin_flex h2 {
       color: #371443;
       font-family: 'Averia Sans Libre', cursive;
+      font-weight: 100;
       font-size: 1.3em;
       margin-bottom: 0; }
   .pinned_container h5 {
@@ -968,6 +1246,8 @@ body {
         margin-bottom: 5px;
         margin-left: 0;
         color: #371443; }
+      .pinned_container .song_info .song_flex h6 + h6 {
+        font-size: 0.75em; }
     .pinned_container .song_info .temp {
       width: 70px;
       height: 70px;
@@ -992,6 +1272,7 @@ body {
       color: #371443;
       font-family: 'Averia Sans Libre', cursive;
       font-size: 1.3em;
+      font-weight: 100;
       margin-bottom: 1rem; }
   .uncollect_container h5 {
     font-family: 'Muli', sans-serif;
@@ -1021,6 +1302,8 @@ body {
         margin-bottom: 5px;
         margin-left: 0;
         color: #371443; }
+      .uncollect_container .song_info .song_flex h6 + h6 {
+        font-size: 0.75em; }
     .uncollect_container .song_info .temp {
       width: 70px;
       height: 70px;
@@ -1044,6 +1327,7 @@ body {
       color: #371443;
       font-family: 'Averia Sans Libre', cursive;
       font-size: 1.3em;
+      font-weight: 100;
       margin-bottom: 1rem; }
   .collect_container h5 {
     font-family: 'Muli', sans-serif;
@@ -1073,6 +1357,8 @@ body {
         margin-bottom: 5px;
         margin-left: 0;
         color: #371443; }
+      .collect_container .song_info .song_flex h6 + h6 {
+        font-size: 0.75em; }
     .collect_container .song_info .temp {
       width: 70px;
       height: 70px;
@@ -1266,13 +1552,342 @@ button {
   display: flex;
   justify-content: center; }
 
+@media screen and (min-width: 375px) {
+  .pinned_container {
+    margin-bottom: 1.2rem; }
+    .pinned_container .pin_flex {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%; }
+      .pinned_container .pin_flex h2 {
+        color: #371443;
+        font-family: 'Averia Sans Libre', cursive;
+        font-weight: 100;
+        font-size: 1.5em;
+        margin-bottom: 0; }
+    .pinned_container h5 {
+      font-family: 'Muli', sans-serif;
+      font-size: 0.8em;
+      padding-left: 1rem;
+      margin-top: 0;
+      margin-bottom: 0.2rem;
+      color: #371443; }
+    .pinned_container .song_info {
+      position: relative; }
+      .pinned_container .song_info .song_flex {
+        width: 100%;
+        height: 70px;
+        background-color: #e2e2eb;
+        margin-bottom: 2px;
+        padding-left: 6rem;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        background: linear-gradient(to right, #e2e2eb 75%, #D3D3E5 25%); }
+        .pinned_container .song_info .song_flex h6 {
+          font-family: 'Muli', sans-serif;
+          font-size: 1.1em;
+          margin: 0;
+          font-weight: 300;
+          margin-bottom: 5px;
+          margin-left: 0;
+          color: #371443; }
+        .pinned_container .song_info .song_flex h6 + h6 {
+          font-size: 0.9em; }
+      .pinned_container .song_info .temp {
+        width: 70px;
+        height: 70px;
+        position: absolute;
+        margin-top: -4.5rem;
+        left: 0; }
+      .pinned_container .song_info .swap_icon {
+        width: 35px;
+        height: 35px;
+        position: absolute;
+        margin-top: -3.4rem;
+        right: 1.7rem; }
+  .uncollect_container {
+    margin-bottom: 1.2rem; }
+    .uncollect_container .uncollect_flex {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%; }
+      .uncollect_container .uncollect_flex h2 {
+        color: #371443;
+        font-family: 'Averia Sans Libre', cursive;
+        font-size: 1.5em;
+        font-weight: 100;
+        margin-bottom: 1rem; }
+    .uncollect_container h5 {
+      font-family: 'Muli', sans-serif;
+      font-size: 0.8em;
+      padding-left: 1rem;
+      margin-top: 0;
+      margin-bottom: 0.2rem;
+      color: #371443; }
+    .uncollect_container .song_info {
+      position: relative; }
+      .uncollect_container .song_info .song_flex {
+        width: 100%;
+        height: 70px;
+        background-color: #e2e2eb;
+        margin-bottom: 2px;
+        padding-left: 6rem;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        background: linear-gradient(to right, #e2e2eb 75%, #D3D3E5 25%); }
+        .uncollect_container .song_info .song_flex h6 {
+          font-family: 'Muli', sans-serif;
+          font-size: 1.1em;
+          margin: 0;
+          font-weight: 300;
+          margin-bottom: 5px;
+          margin-left: 0;
+          color: #371443; }
+        .uncollect_container .song_info .song_flex h6 + h6 {
+          font-size: 0.9em; }
+      .uncollect_container .song_info .temp {
+        width: 70px;
+        height: 70px;
+        position: absolute;
+        margin-top: -4.5rem;
+        left: 0; }
+      .uncollect_container .song_info .add {
+        width: 35px;
+        position: absolute;
+        margin-top: -2.7rem;
+        right: 2.4rem; }
+  .collect_container {
+    margin-bottom: 1.2rem; }
+    .collect_container .collect_flex {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%; }
+      .collect_container .collect_flex h2 {
+        color: #371443;
+        font-family: 'Averia Sans Libre', cursive;
+        font-size: 1.5em;
+        font-weight: 100;
+        margin-bottom: 1rem; }
+    .collect_container h5 {
+      font-family: 'Muli', sans-serif;
+      font-size: 0.8em;
+      padding-left: 1rem;
+      margin-top: 0;
+      margin-bottom: 0.2rem;
+      color: #371443; }
+    .collect_container .song_info {
+      position: relative; }
+      .collect_container .song_info .song_flex {
+        width: 100%;
+        height: 70px;
+        background-color: #e2e2eb;
+        margin-bottom: 2px;
+        padding-left: 6rem;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        background: linear-gradient(to right, #e2e2eb 75%, #D3D3E5 25%); }
+        .collect_container .song_info .song_flex h6 {
+          font-family: 'Muli', sans-serif;
+          font-size: 1.1em;
+          margin: 0;
+          font-weight: 300;
+          margin-bottom: 5px;
+          margin-left: 0;
+          color: #371443; }
+        .collect_container .song_info .song_flex h6 + h6 {
+          font-size: 0.9em; }
+      .collect_container .song_info .temp {
+        width: 70px;
+        height: 70px;
+        position: absolute;
+        margin-top: -4.5rem;
+        left: 0; }
+      .collect_container .song_info .add {
+        width: 35px;
+        position: absolute;
+        margin-top: -2.7rem;
+        right: 2.4rem; } }
+
+@media screen and (min-width: 414px) {
+  .pinned_container {
+    margin-bottom: 1.2rem; }
+    .pinned_container .pin_flex {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%; }
+      .pinned_container .pin_flex h2 {
+        color: #371443;
+        font-family: 'Averia Sans Libre', cursive;
+        font-weight: 100;
+        font-size: 1.7em;
+        margin-bottom: 0; }
+    .pinned_container h5 {
+      font-family: 'Muli', sans-serif;
+      font-size: 0.8em;
+      padding-left: 1rem;
+      margin-top: 0;
+      margin-bottom: 0.2rem;
+      color: #371443; }
+    .pinned_container .song_info {
+      position: relative; }
+      .pinned_container .song_info .song_flex {
+        width: 100%;
+        height: 70px;
+        background-color: #e2e2eb;
+        margin-bottom: 2px;
+        padding-left: 6rem;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        background: linear-gradient(to right, #e2e2eb 75%, #D3D3E5 25%); }
+        .pinned_container .song_info .song_flex h6 {
+          font-family: 'Muli', sans-serif;
+          font-size: 1.1em;
+          margin: 0;
+          font-weight: 300;
+          margin-bottom: 5px;
+          margin-left: 0;
+          color: #371443; }
+        .pinned_container .song_info .song_flex h6 + h6 {
+          font-size: 0.9em; }
+      .pinned_container .song_info .temp {
+        width: 70px;
+        height: 70px;
+        position: absolute;
+        margin-top: -4.5rem;
+        left: 0; }
+      .pinned_container .song_info .swap_icon {
+        width: 35px;
+        height: 35px;
+        position: absolute;
+        margin-top: -3.4rem;
+        right: 2rem; }
+  .uncollect_container {
+    margin-bottom: 1.2rem; }
+    .uncollect_container .uncollect_flex {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%; }
+      .uncollect_container .uncollect_flex h2 {
+        color: #371443;
+        font-family: 'Averia Sans Libre', cursive;
+        font-size: 1.7em;
+        font-weight: 100;
+        margin-bottom: 1rem; }
+    .uncollect_container h5 {
+      font-family: 'Muli', sans-serif;
+      font-size: 0.8em;
+      padding-left: 1rem;
+      margin-top: 0;
+      margin-bottom: 0.2rem;
+      color: #371443; }
+    .uncollect_container .song_info {
+      position: relative; }
+      .uncollect_container .song_info .song_flex {
+        width: 100%;
+        height: 70px;
+        background-color: #e2e2eb;
+        margin-bottom: 2px;
+        padding-left: 6rem;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        background: linear-gradient(to right, #e2e2eb 75%, #D3D3E5 25%); }
+        .uncollect_container .song_info .song_flex h6 {
+          font-family: 'Muli', sans-serif;
+          font-size: 1.1em;
+          margin: 0;
+          font-weight: 300;
+          margin-bottom: 5px;
+          margin-left: 0;
+          color: #371443; }
+        .uncollect_container .song_info .song_flex h6 + h6 {
+          font-size: 0.9em; }
+      .uncollect_container .song_info .temp {
+        width: 70px;
+        height: 70px;
+        position: absolute;
+        margin-top: -4.5rem;
+        left: 0; }
+      .uncollect_container .song_info .add {
+        width: 35px;
+        position: absolute;
+        margin-top: -2.7rem;
+        right: 2.7rem; }
+  .collect_container {
+    margin-bottom: 1.2rem; }
+    .collect_container .collect_flex {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%; }
+      .collect_container .collect_flex h2 {
+        color: #371443;
+        font-family: 'Averia Sans Libre', cursive;
+        font-size: 1.7em;
+        font-weight: 100;
+        margin-bottom: 1rem; }
+    .collect_container h5 {
+      font-family: 'Muli', sans-serif;
+      font-size: 0.8em;
+      padding-left: 1rem;
+      margin-top: 0;
+      margin-bottom: 0.2rem;
+      color: #371443; }
+    .collect_container .song_info {
+      position: relative; }
+      .collect_container .song_info .song_flex {
+        width: 100%;
+        height: 70px;
+        background-color: #e2e2eb;
+        margin-bottom: 2px;
+        padding-left: 6rem;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        background: linear-gradient(to right, #e2e2eb 75%, #D3D3E5 25%); }
+        .collect_container .song_info .song_flex h6 {
+          font-family: 'Muli', sans-serif;
+          font-size: 1.1em;
+          margin: 0;
+          font-weight: 300;
+          margin-bottom: 5px;
+          margin-left: 0;
+          color: #371443; }
+        .collect_container .song_info .song_flex h6 + h6 {
+          font-size: 0.9em; }
+      .collect_container .song_info .temp {
+        width: 70px;
+        height: 70px;
+        position: absolute;
+        margin-top: -4.5rem;
+        left: 0; }
+      .collect_container .song_info .add {
+        width: 35px;
+        position: absolute;
+        margin-top: -2.7rem;
+        right: 2.7rem; } }
+
 #gather {
   display: flex;
   width: 100%;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  padding-top: 7.75rem; }
+  align-items: center; }
   #gather .new-entry-bar {
     background-color: #371443;
     width: 100%;
@@ -1382,6 +1997,66 @@ button {
   display: flex;
   justify-content: space-around; }
 
+@media screen and (min-width: 375px) {
+  #gather .new-entry-bar h5 {
+    font-size: 1.2em; }
+  #gather .entry-container-add {
+    width: 90%;
+    margin-top: 0.75rem; }
+    #gather .entry-container-add input {
+      height: 3rem;
+      width: 95%;
+      background-color: #ededfa;
+      border-top-right-radius: 40px;
+      border-bottom-right-radius: 40px;
+      border-top-left-radius: 25px;
+      border-bottom-left-radius: 25px;
+      border: solid 1px #D5D5E0;
+      padding-left: 4rem;
+      font-size: 1.2em; }
+    #gather .entry-container-add input::placeholder {
+      font-family: 'Muli', sans-serif;
+      padding-left: 0rem; }
+    #gather .entry-container-add textarea {
+      width: 95%;
+      border: solid 1px #D5D5E0;
+      background-color: #ededfa;
+      height: 10rem;
+      border-radius: 7.5px;
+      padding-left: 4rem;
+      font-size: 1.2em; }
+    #gather .entry-container-add textarea::placeholder {
+      font-family: 'Muli', sans-serif;
+      padding-left: 0rem; }
+    #gather .entry-container-add .input-icons-container .background-icon {
+      position: absolute;
+      width: 53.5px;
+      height: 53.5px; }
+    #gather .entry-container-add .input-icons-container .head {
+      margin-top: -0.1rem; }
+  .add_entry_cancel a {
+    font-size: 1.2em; }
+  #save-entry-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.3rem;
+    margin-bottom: 2rem; }
+    #save-entry-container button {
+      width: 16rem;
+      height: 3.2rem;
+      position: relative;
+      font-family: 'Muli', sans-serif;
+      font-size: 1.3em;
+      color: #371443;
+      font-style: italic;
+      padding-left: 2.25rem; }
+      #save-entry-container button img {
+        position: absolute;
+        width: 27.5px;
+        height: 27.5px;
+        margin-left: -11.5rem; } }
+
 .profile {
   display: flex;
   justify-content: center;
@@ -1420,7 +2095,7 @@ button {
     font-weight: 100;
     font-size: 1.2em;
     margin-top: 2rem;
-    margin-bottom: 0; }
+    margin-bottom: -0.5rem; }
 
 .user_info {
   position: relative; }
@@ -1511,11 +2186,144 @@ button {
   font-style: italic;
   font-weight: 100; }
 
+@media screen and (min-width: 375px) {
+  .profile .user_info {
+    margin-top: 1rem; }
+    .profile .user_info h4 {
+      font-size: 1.5em; }
+  .user-pin h2 {
+    font-size: 1.35em;
+    margin-top: 2rem;
+    margin-bottom: -0.5rem; }
+  .user_info .user_flex {
+    height: 85px;
+    margin-bottom: 2px;
+    padding-left: 6rem; }
+    .user_info .user_flex h6 {
+      font-family: 'Muli', sans-serif;
+      font-size: 1.1em;
+      margin: 0;
+      font-weight: 300;
+      margin-bottom: 5px;
+      margin-left: 0;
+      color: #371443; }
+    .user_info .user_flex h6 + h6 {
+      font-size: 0.9em; }
+  .user_info .user_temp {
+    width: 85px;
+    height: 85px;
+    position: absolute;
+    margin-top: -5.5rem;
+    left: 0; }
+  .user_info .user_edit {
+    width: 35px;
+    position: absolute;
+    margin-top: -2.7rem;
+    right: 1.1rem; }
+  .button_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 1.25rem; }
+  .profile_spot_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #371443;
+    margin-top: 1.15rem;
+    padding: 20px 20px 20px 20px;
+    font-size: 1.1em;
+    font-style: italic; }
+    .profile_spot_button img {
+      width: 45px;
+      height: 45px;
+      margin: 0.3rem 0.8rem 0.3rem 0.8rem; }
+  .profile_reset_button {
+    margin-top: 2rem;
+    padding: 20px 20px 20px 20px;
+    font-size: 1.1em;
+    font-style: italic;
+    color: #371443; }
+  .delete_account_btn {
+    margin-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    font-size: 0.9em;
+    font-weight: 100; } }
+
+@media screen and (min-width: 414px) {
+  .profile .user_info {
+    margin-top: 1rem; }
+    .profile .user_info h4 {
+      font-size: 1.7em; }
+  .user-pin h2 {
+    font-size: 1.4em;
+    margin-top: 2rem;
+    margin-bottom: -0.5rem; }
+  .user_info .user_flex {
+    height: 85px;
+    margin-bottom: 2px;
+    padding-left: 6rem; }
+    .user_info .user_flex h6 {
+      font-family: 'Muli', sans-serif;
+      font-size: 1.15em;
+      margin: 0;
+      font-weight: 300;
+      margin-bottom: 5px;
+      margin-left: 0;
+      color: #371443; }
+    .user_info .user_flex h6 + h6 {
+      font-size: 0.9em; }
+  .user_info .user_temp {
+    width: 85px;
+    height: 85px;
+    position: absolute;
+    margin-top: -5.5rem;
+    left: 0; }
+  .user_info .user_edit {
+    width: 35px;
+    position: absolute;
+    margin-top: -2.7rem;
+    right: 1.5rem; }
+  .button_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 1.25rem; }
+  .profile_spot_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #371443;
+    margin-top: 1.15rem;
+    padding: 25px 25px 25px 25px;
+    font-size: 1.3em;
+    font-style: italic; }
+    .profile_spot_button img {
+      width: 45px;
+      height: 45px;
+      margin: 0.3rem 0.8rem 0.3rem 0.8rem; }
+  .profile_reset_button {
+    margin-top: 2rem;
+    padding: 17.5px 17.5px 17.5px 17.5px;
+    font-size: 1.3em;
+    font-style: italic;
+    color: #371443; }
+  .delete_account_btn {
+    margin-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    font-size: 0.9em;
+    font-weight: 100; } }
+
 .nav img {
   width: 100%; }
 
 .upcoming h2 {
   font-family: 'Averia Sans Libre', cursive;
+  font-weight: 100;
   margin: 0;
   margin-left: 10px;
   margin-bottom: 20px;
@@ -1526,7 +2334,8 @@ button {
 .my_journal h2 {
   margin-left: 10px;
   color: #371443;
-  font-family: 'Averia Sans Libre', cursive; }
+  font-family: 'Averia Sans Libre', cursive;
+  font-weight: 100; }
 
 .my_journal div {
   position: relative; }
@@ -1592,6 +2401,163 @@ button {
   bottom: 0;
   position: fixed;
   display: flex;
-  justify-content: flex-end; 
-  z-index: 40;
-}
+  justify-content: flex-end;
+  z-index: 999; }
+
+@media screen and (min-width: 375px) {
+  .upcoming h2 {
+    font-family: 'Averia Sans Libre', cursive;
+    font-size: 1.75em;
+    margin: 0;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    margin-top: 10%;
+    padding: 0;
+    color: #371443; }
+  .my_journal h2 {
+    margin-left: 10px;
+    color: #371443;
+    font-family: 'Averia Sans Libre', cursive;
+    font-size: 1.75em; }
+  .my_journal div {
+    position: relative; }
+    .my_journal div .flex {
+      width: 100%;
+      height: 100px;
+      background-color: #e2e2eb;
+      margin-bottom: 2px;
+      padding-right: 7.2rem;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      flex-direction: column; }
+      .my_journal div .flex h6 {
+        font-family: 'Muli', sans-serif;
+        font-size: 0.8em;
+        margin: 0;
+        margin-bottom: 5px; }
+    .my_journal div .legend {
+      width: 98.5px;
+      height: 98.5px;
+      position: absolute;
+      margin-top: -6.3rem;
+      left: 69.5%; }
+  .upcoming_events {
+    width: 100%;
+    background-color: #ededf7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+    .upcoming_events h4 {
+      font-family: 'Muli', sans-serif;
+      color: #371443;
+      font-style: italic;
+      font-size: 1em; }
+    .upcoming_events img {
+      width: 20%;
+      margin-top: 0;
+      margin-bottom: 15px; }
+  .entries {
+    width: 100%;
+    background-color: #ededf7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+    .entries h4 {
+      font-family: 'Muli', sans-serif;
+      color: #371443;
+      font-size: 1em;
+      margin-bottom: 0.5rem; }
+    .entries h6 {
+      font-family: 'Muli', sans-serif;
+      color: #371443;
+      font-size: 0.75em;
+      margin-bottom: 0.5rem; }
+  .plus_button {
+    width: 100%;
+    bottom: 0;
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    z-index: 999; } }
+
+@media screen and (min-width: 414px) {
+  .upcoming h2 {
+    font-family: 'Averia Sans Libre', cursive;
+    font-size: 2.3em;
+    margin: 0;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    margin-top: 10%;
+    padding: 0;
+    color: #371443; }
+  .my_journal h2 {
+    margin-left: 10px;
+    color: #371443;
+    font-family: 'Averia Sans Libre', cursive;
+    font-size: 2.3em; }
+  .my_journal div {
+    position: relative; }
+    .my_journal div .flex {
+      width: 100%;
+      height: 100px;
+      background-color: #e2e2eb;
+      margin-bottom: 2px;
+      padding-right: 7.2rem;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      flex-direction: column; }
+      .my_journal div .flex h6 {
+        font-family: 'Muli', sans-serif;
+        font-size: 0.8em;
+        margin: 0;
+        margin-bottom: 5px; }
+    .my_journal div .legend {
+      width: 98.5px;
+      height: 98.5px;
+      position: absolute;
+      margin-top: -6.3rem;
+      left: 69.5%; }
+  .upcoming_events {
+    width: 100%;
+    background-color: #ededf7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+    .upcoming_events h4 {
+      font-family: 'Muli', sans-serif;
+      color: #371443;
+      font-style: italic;
+      font-size: 1.2em; }
+    .upcoming_events img {
+      width: 20%;
+      margin-top: 0;
+      margin-bottom: 15px; }
+  .entries {
+    width: 100%;
+    background-color: #ededf7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+    .entries h4 {
+      font-family: 'Muli', sans-serif;
+      color: #371443;
+      font-size: 1.2em;
+      margin-bottom: 0.5rem; }
+    .entries h6 {
+      font-family: 'Muli', sans-serif;
+      color: #371443;
+      font-size: 0.9em;
+      margin-bottom: 0.5rem; }
+  .plus_button {
+    width: 100%;
+    bottom: 0;
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    z-index: 999; } }
