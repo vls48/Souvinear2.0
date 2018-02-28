@@ -2318,6 +2318,90 @@ button {
     font-size: 0.9em;
     font-weight: 100; } }
 
+@media only screen and (orientation: landscape) {
+  body {
+    width: 100wh;
+    height: 100vh;
+    color: #fff;
+    background: linear-gradient(-45deg, #fe5893, #8589D5, #2fd9cf);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite; }
+  .port_wrap {
+    display: none; }
+  .land_wrap {
+    display: flex;
+    justify-content: center;
+    position: relative; }
+  .land-text_wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    top: 80%;
+    position: absolute; }
+    .land-text_wrap h3 {
+      font-family: 'Averia Sans Libre', cursive;
+      font-weight: 100;
+      font-size: 1.75em;
+      color: white; }
+  .left_phone_wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .left_phone_wrap .left_phone {
+      margin-top: 25%;
+      animation: swivel_left alternate infinite 1.6s;
+      width: 45%; }
+  #phone_one {
+    transform-origin: bottom left; }
+  #phone_two {
+    transform-origin: bottom right; }
+  @keyframes swivel_left {
+    0% {
+      transform: rotate(0deg); }
+    100% {
+      transform: rotate(90deg); } }
+  @keyframes swivel_right {
+    0% {
+      transform: rotate(0deg); }
+    100% {
+      transform: rotate(90deg); } }
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%; }
+    50% {
+      background-position: 100% 50%; }
+    100% {
+      background-position: 0% 50%; } }
+  .cls-1 {
+    fill: #212121; }
+  .cls-2 {
+    fill: #dbdbdb; }
+  .cls-3 {
+    fill: #bfbfbf; }
+  .cls-4 {
+    fill: #1972bc; }
+  .cls-5 {
+    fill: #7b9fd6; }
+  .cls-6 {
+    fill: #fcfcfc; }
+  .cls-7 {
+    fill: #f2380c; }
+  .cls-8 {
+    fill: #efde7d; }
+  .cls-one {
+    fill: #212121; }
+  .cls-two {
+    fill: #b2b2b2; }
+  .cls-one-one {
+    fill: #212121; }
+  .cls-two-two {
+    fill: #b2b2b2; } }
+
+@media only screen and (orientation: portrait) {
+  .land_wrap {
+    display: none; } }
+
 .nav img {
   width: 100%; }
 

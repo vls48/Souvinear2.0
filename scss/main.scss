@@ -14,6 +14,13 @@
 @import "swap-box.scss";
 @import "add-entry.scss";
 @import "account-settings.scss";
+@import "landscape.scss";
+
+@media only screen and (orientation: portrait) {
+	.land_wrap {
+		display: none;
+	}
+}
 
 .nav {
 	img {
