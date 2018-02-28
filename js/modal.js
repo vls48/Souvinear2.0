@@ -43,7 +43,6 @@ $('.slider').each(function() {
         left: 0
       });
       currentIndex = newIndex;
-      console.log(currentIndex);
     });
   }
   
@@ -72,7 +71,6 @@ $('.slider').each(function() {
     
     if (index === currentIndex) {
       $button.addClass('active');
-      console.log(bulletArray);
     }
     $button.on('click', function() {
       move(index);
@@ -96,6 +94,10 @@ console.log(document.getElementsByClassName("close")[0]);
 span.onclick = function() {
     modal.style.display = "none";
 }
+
+// btn.onclick = function() {
+//     modal.style.display = "block";
+// }
 
 btn2.onclick = function() {
     modal.style.display = "none";

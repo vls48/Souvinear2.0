@@ -70,22 +70,31 @@
     <!-- JS to change config variables -->
 	<script src="https://spotify-player.herokuapp.com/spotify-player.js"></script>
 <!--	<script src="js/spotify.js"></script> -->
-
+    <!---->
+<!--      <script src="js/js-hotspot.js"></script>-->
+<!--      <script src="js/modal.js"></script>-->
+      <script src="js/spot_modal.js"></script>
+<!--
+        <script async defer
+                src="https://maps.googleapis.com/maps/api/j s?key=AIzaSyDMTAmp7DTDCyx6gYt5vilMAdjudsL7z0I&callback=initMap">
+	    </script>
+-->
     
       <script src="js/js-nav.js"></script>
     <!-- controllers -->
       <script src="app/controllers/mainCtrl.js"></script>
       <script src="app/controllers/editCtrl.js"></script>
+      <script src="app/controllers/editDisplayCtrl.js"></script>
       <script src="app/controllers/addCtrl.js"></script>
-      <!-- 
-        <script src="app/controllers/authCtrl.js"></script>
-        <script src="app/controllers/loginCtrl.js"></script>
+    <!--
+      <script src="app/controllers/authCtrl.js"></script>
+      <script src="app/controllers/loginCtrl.js"></script>
     -->
-   
+
 </head>
-<body ng-controller="MyCtrl">
+
     
-<div id='nav' ng-hide="navBoolean">
+<div id='nav'>
     <div class="mobile"><ul class="group">
     
 <li><a href="#/hotspot"><svg width="45px" height="57px" viewBox="0 0 45 57" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -153,22 +162,23 @@
     </g>
 </svg> <br> Settings</a></li>
 </ul></div>
-    <div class='wave -one'></div>
+    <div class='wave -one'>
+    </div>
+<!--     <div class='wave -two'></div> -->
     <div class='wave -three'></div>
     <div class='title'>&#8964;</div>  
-  </div>
-<!-- end nav -->
+</div>
 
-        <div data-ng-view="" id="ng-view" class="slide-animation">    
-        </div>
+    
+<body>
+        <div data-ng-view="" id="ng-view" class="slide-animation"></div>
 
 		<!-- Landscape View Start -->
 		<div class="land_wrap">
-		</div>
 
-        <!-- Landscape View End -->
-        		
-    <script src="js/js-nav.js"></script>
+		</div>
+        <script src="js/js-nav.js"></script>
+		<!-- Landscape View End -->
 </body>
 
 </html>
