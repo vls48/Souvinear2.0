@@ -1,7 +1,7 @@
 <?php
 
-$client_id = 'f77925f0471243af97142794fd2efe1d'; 
-$client_secret = '75c4616ff46c42468e1f5a0395b14022'; 
+$client_id = ''; 
+$client_secret = ''; 
 
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_URL,            'https://accounts.spotify.com/api/token' );
