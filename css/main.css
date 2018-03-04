@@ -2326,6 +2326,8 @@ button {
     background: linear-gradient(-45deg, #fe5893, #8589D5, #2fd9cf);
     background-size: 400% 400%;
     animation: gradient 15s ease infinite; }
+  #nav {
+    display: none; }
   .port_wrap {
     display: none; }
   .land_wrap {
@@ -2349,7 +2351,7 @@ button {
     justify-content: center;
     align-items: center; }
     .left_phone_wrap .left_phone {
-      margin-top: 25%;
+      margin-top: 30%;
       animation: swivel_left alternate infinite 1.6s;
       width: 45%; }
   #phone_one {
