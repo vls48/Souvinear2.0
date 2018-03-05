@@ -7,7 +7,7 @@
 		"uuidString": "E9E80FE0-6C5B-4CD6-9228-9FA4AF0CE9E1"
 		}
 	],
-"creatorBuild": "26268",
+"creatorBuild": "26330",
 "files": {
 	"\/app\/app.js": {
 		"ft": 64,
@@ -15,16 +15,6 @@
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/app\/app-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"\/app\/controllers\/addCtrl 2.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/app\/controllers\/addCtrl 2-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
@@ -39,32 +29,12 @@
 		"sC": 1,
 		"tS": 0
 		},
-	"\/app\/controllers\/authCtrl 2.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/app\/controllers\/authCtrl 2-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
 	"\/app\/controllers\/authCtrl.js": {
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/app\/controllers\/authCtrl-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"\/app\/controllers\/editCtrl 2.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/app\/controllers\/editCtrl 2-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
@@ -79,12 +49,12 @@
 		"sC": 1,
 		"tS": 0
 		},
-	"\/app\/controllers\/loginCtrl 2.js": {
+	"\/app\/controllers\/editDisplayCtrl.js": {
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "\/app\/controllers\/loginCtrl 2-min.js",
+		"oAP": "\/app\/controllers\/editDisplayCtrl-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
@@ -95,16 +65,6 @@
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/app\/controllers\/loginCtrl-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"\/app\/controllers\/mainCtrl 2.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/app\/controllers\/mainCtrl 2-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
@@ -1253,6 +1213,16 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/scss\/main.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/scss\/main-min.css",
+		"oF": 0,
+		"oS": 3
+		},
 	"\/scss\/main.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -1265,6 +1235,13 @@
 		"oF": 2,
 		"oS": 0,
 		"uL": 1
+		},
+	"\/v1\/.htaccess": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/v1\/.htaccess",
+		"oF": 0
 		},
 	"\/v1\/concert_processing.php": {
 		"cB": 0,
@@ -1308,11 +1285,11 @@
 		"oAP": "\/v1\/edit_processing.php",
 		"oF": 0
 		},
-	"\/v1\/error_log": {
+	"\/v1\/editConcertList.php": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/v1\/error_log",
+		"oAP": "\/v1\/editConcertList.php",
 		"oF": 0
 		},
 	"\/v1\/includes\/db_connection.php": {
@@ -1363,13 +1340,6 @@
 		"oA": 0,
 		"oAP": "\/v1\/logout_processing.php",
 		"oF": 0
-		},
-	"\/v1\/session.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/v1\/session.php",
-		"oF": 0
 		}
 	},
 "hooks": [
@@ -1378,7 +1348,7 @@
 	},
 "projectAttributes": {
 	"creationDate": 529352858,
-	"displayValue": "souvinear",
+	"displayValue": "Souvinear2.0",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "meme-archer"
 	},
