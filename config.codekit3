@@ -4,10 +4,10 @@
 	{
 		"name": "Process All Remaining Files and Folders",
 		"stepType": 1,
-		"uuidString": "E5F2759E-7D36-4F16-8EA5-7A6094BE3179"
+		"uuidString": "E9E80FE0-6C5B-4CD6-9228-9FA4AF0CE9E1"
 		}
 	],
-"creatorBuild": "26268",
+"creatorBuild": "26330",
 "files": {
 	"\/app\/app.js": {
 		"ft": 64,
@@ -1030,9 +1030,9 @@
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "\/js\/spot_modal-min.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 1,
 		"tS": 0
 		},
@@ -1294,8 +1294,8 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/css\/main.css",
-		"oF": 2,
+		"oAP": "\/scss\/main.css",
+		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
@@ -1417,10 +1417,10 @@
 "manualImportLinks": {
 	},
 "projectAttributes": {
-	"creationDate": 541440372,
+	"creationDate": 529352858,
 	"displayValue": "Souvinear2.0",
 	"displayValueWasSetByUser": 0,
-	"iconImageName": "meme-lotr"
+	"iconImageName": "meme-archer"
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
