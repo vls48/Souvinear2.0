@@ -37,7 +37,6 @@
                     
                     
 					<div class="flex" id="entry_flex">
-                       
 <!--
                     <div>
                     <form ng-controller="editCtrl" method="post" id="edit_entry" >
@@ -53,28 +52,26 @@
                     </form>
                     </div>
 -->
-                        
                         <div class="concert_info">
 						<h6>{{ x.HEADLINER}}</h6>
 						<h6>{{ x.CONCERT_DATE }}</h6>
 						<h6>{{ x.VENUE }}</h6>
                         </div>
                         <img class="legend" src="graphics/legend.jpeg" alt="John Legend">
-                        <div>
-                        <form ng-submit="getEditInfo()" ng-controller="editDisplayCtrl" id="edit_entry">
-                        <a href="#/edit-entry">
-                        <button type="submit" name="submit" >
+                        <div ng-controller="editDisplayCtrl">
+                        <form ng-submit="getEditInfo()" id="edit_entry">
+<!--                        <a href="#/edit-entry">-->
                         <p>
-                          <input type="text" name="headliner" id="headliner" value="{{ x.HEADLINER}}" class="uneeded" ng-model="headliner">
-                        </p>   
-                            <p>EDIT</p>
+                          <input type="text" name="headliner" id="entered_headliner" value="{{ x.HEADLINER}}" class="uneeded">
+                        </p> 
                         <p>
-                          <input type="date" name="concert_date" id="concert_date" value="{{ x.CONCERT_DATE }}" class="uneeded" ng-model="concert_date">
-                        </p>                 
-
+                          <input type="date" name="concert_date" id="entered_concert_date" value="{{ x.CONCERT_DATE }}" class="uneeded">
+                        </p>    
+                        <button type="submit" name="submit" >  
+                            <p>EDIT</p>             
 <!--					   <img class="legend" src="graphics/legend.jpeg" alt="John Legend">-->
                         </button>
-                        </a>
+<!--                        </a>-->
                             </form>
                         </div>
             
