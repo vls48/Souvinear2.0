@@ -109,16 +109,20 @@
 	justify-content: center;
 	align-items: center;
 
+	  margin-top: 1rem;
+	  margin-bottom: 0.8rem;
+      padding: 5px 10px 5px 10px;
+      border-radius: 50px;
+      width: 13rem;
+      height: 4rem;
+      background-color: #2dd5cc;
+      box-shadow: 0px 6px 0px #23B8BB;
+      border: #155658;
+      transition: all 100ms;
+
 	color: #371443;
-	margin-top: 1.15rem;
-    padding: 10px 10px 10px 10px;
-    border-radius: 25px;
-    background-color: #2DD5CC;
     font-size: 1rem;
     font-weight: 500;
-    min-width: 140px;
-    box-shadow: 0px 3px 0px #23B8BB;
-    border: #155658;
     font-family: 'Muli', sans-serif;
     font-size: 1.1em;
     font-style: italic;
@@ -129,21 +133,60 @@
     }
 }
 
+
+.profile_spot_button:active {
+	  margin-top: 1.2rem;
+      padding: 5px 10px 5px 10px;
+      border-radius: 50px;
+      width: 14rem;
+      height: 4rem;
+      background-color: #26B7B0;
+      box-shadow: 0px 3px 0px #1D989C;
+      border: #155658;
+      transition: all 100ms;
+      transform: translateY(3px);
+}
+
+
+
+
+
 .profile_reset_button {
-	margin-top: 1.15rem;
-    padding: 10px 10px 10px 10px;
-    border-radius: 25px;
-    background-color: #2DD5CC;
     font-size: 1rem;
     font-weight: 500;
-    min-width: 140px;
-    box-shadow: 0px 3px 0px #23B8BB;
-    border: #155658;
+    color: #371443;
     font-family: 'Muli', sans-serif;
     font-size: 1.1em;
     font-style: italic;
-    color: #371443;
+
+      margin-top: 1rem;
+	  margin-bottom: 0.8rem;
+	  padding: 5px 10px 5px 10px;
+	  border-radius: 50px;
+	  width: 11rem;
+	  height: 2.5rem;
+	  background-color: #2dd5cc;
+	  box-shadow: 0px 6px 0px #23B8BB;
+	  border: #155658;
+	  transition: all 100ms;
+	  transform: translateY(3px);
 }
+
+
+
+.profile_reset_button:active {
+	  margin-top: 1.2rem;
+      padding: 5px 10px 5px 10px;
+      border-radius: 50px;
+      width: 12rem;
+      height: 2.5rem;
+      background-color: #26B7B0;
+      box-shadow: 0px 3px 0px #1D989C;
+      border: #155658;
+      transition: all 100ms;
+}
+
+
 
 .delete_account_btn {
 	margin-top: 1.5rem;
@@ -151,6 +194,7 @@
 	box-shadow: none;
 	border: none;
 	padding-bottom: 1.5rem;
+	color: #371443;
 
 	font-family: 'Muli', sans-serif;
 	font-size: 0.8em;
@@ -338,8 +382,8 @@
 
 	color: #371443;
 	margin-top: 1.15rem;
-    padding: 25px 25px 25px 25px;
-    font-size: 1.3em;
+    padding: 5px 10px 5px 10px;
+    font-size: 1.1em;
     font-style: italic;
     img {
     	width: 45px;
@@ -350,8 +394,8 @@
 
 .profile_reset_button {
 	margin-top: 2rem;
-    padding: 17.5px 17.5px 17.5px 17.5px;
-    font-size: 1.3em;
+    padding: 5px 10px 5px 10px;
+    font-size: 1.1em;
     font-style: italic;
     color: #371443;
 }

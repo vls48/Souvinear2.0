@@ -18,16 +18,43 @@ $("#nav_button").click(function(event) {
 
 
 
+// Click function for swap animation
+
+document.getElementById('swap_micro').addEventListener('click', function () {
+
+  if (this.classList.contains('swap_btn')) {
+
+   this.classList.add('swap_play');
+  } else {
+
+  }
+});
 
 
+// Click function for swap inbox animation
+
+document.getElementById('swap_inbox_micro').addEventListener('mouseenter', function () {
+
+  if (this.classList.contains('swap_inbox_btn')) {
+
+   this.classList.add('swap_inbox_play');
+  } else {
+
+  }
+});
 
 
+// Click function for pinning songs 
 
+document.getElementById('pin_micro').addEventListener('click', function () {
 
+  if (this.classList.contains('add_pin')) {
 
+   this.classList.add('pin_selected');
+  } else {
 
-
-
+  }
+});
 
 
 

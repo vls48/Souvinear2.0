@@ -71,9 +71,16 @@
 	margin-top: 1.3rem;
 	margin-bottom: 2rem;
 	button {
-		width: 14rem;
-		height: 2.5rem;
 		position: relative;
+
+	      padding: 5px 10px 5px 10px;
+	      border-radius: 50px;
+	      width: 14rem;
+	      height: 3rem;
+	      background-color: #2dd5cc;
+	      box-shadow: 0px 6px 0px #23B8BB;
+	      border: #155658;
+	      transition: all 100ms;
 
 		font-family: 'Muli', sans-serif;              
 		font-size: 1.3em;      
@@ -86,6 +93,17 @@
 			height: 27.5px;
 			margin-left: -11.5rem;
 		}
+	}
+	button:active {
+      padding: 5px 10px 5px 10px;
+      border-radius: 50px;
+      width: 15rem;
+      height: 3rem;
+      background-color: #26B7B0;
+      box-shadow: 0px 3px 0px #1D989C;
+      border: #155658;
+      transition: all 100ms;
+      transform: translateY(3px);
 	}
 }
 

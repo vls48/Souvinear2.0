@@ -51,13 +51,14 @@
 }
 
 .btn--login {
+      padding: 0;
       border-radius: 50px;
       width: 11rem;
       height: 2.7rem;
-      border: none;
-      background-image: linear-gradient(bottom, rgb(45,213,204) 0%, rgb(45,213,204) 100%);
-      text-shadow: 0px -1px 0px rgba(0,0,0,.5);
-      box-shadow: 0px 4px 0px #2FB8BA, 0px 4px 0px rgba(0,0,0,.4), inset 0px 1px 0px rgba(255,255,255,.3), inset 0px 0px 3px rgba(255,255,255,.5);
+      background-color: #2dd5cc;
+      box-shadow: 0px 6px 0px #23B8BB;
+      border: #155658;
+      transition: all 100ms;
 
 
       margin: 2rem 0 0 0;
@@ -69,9 +70,14 @@
   }
 
     .btn--login:active {
-      background-image: linear-gradient(bottom, rgb(34, 170, 164) 0%, rgb(34, 170, 164) 100%);
-      text-shadow: 0px -1px 0px rgba(0,0,0,.5);
-      box-shadow: 0px 4px 0px #248d8f, 0px 4px 0px rgba(0,0,0,.4), inset 0px 1px 0px rgba(255,255,255,.3), inset 0px 0px 3px rgba(255,255,255,.5);
+      padding: 0;
+      border-radius: 50px;
+      width: 12rem;
+      background-color: #26B7B0;
+      box-shadow: 0px 3px 0px #1D989C;
+      border: #155658;
+      transform: translateY(3px);
+      transition: all 100ms;
     }
 
 

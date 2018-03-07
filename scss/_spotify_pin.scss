@@ -141,7 +141,6 @@
 			align-items: flex-start;
 			flex-direction: column;
 
-			background: linear-gradient(to right, #e2e2eb 75%, #D3D3E5 25%);
 			h6 {
 				font-family: 'Muli', sans-serif;
 				font-size: 1em;
@@ -162,12 +161,44 @@
 			margin-top: -4.5rem;
 			left: 0;
 		}
-		.add {
-			width: 35px;
+		.add_pin {
+			cursor: pointer;
+			width: 85px;
+			height: 70px;
 			position: absolute;
-			margin-top: -2.7rem;
-			right: 2rem;
+			margin-top: -4.5rem;
+			right: 0rem;
+			border: none;
+			background-color: #d1d4e4;
+
+			font-family: 'Muli', sans-serif;
+			font-size: 1em;
+			font-weight: 300;
+			color: #371443;
+			transition: 200ms all;
 		}
+		.pin_selected {
+			transition: 200ms all;
+			color: #fff !important;
+			background: linear-gradient(-45deg, #fe5893, #8589D5, #2fd9cf);
+			background-size: 400% 400%;
+			animation: gradient 15s ease infinite;
+		}
+	}
+}
+
+
+
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
 	}
 }
 

@@ -36,7 +36,6 @@
 			align-items: flex-start;
 			flex-direction: column;
 
-			background: linear-gradient(to right, #e2e2eb 75%, #D3D3E5 25%);
 			h6 {
 				font-family: 'Muli', sans-serif;
 				font-size: 1em;
@@ -56,6 +55,20 @@
 			position: absolute;
 			margin-top: -4.5rem;
 			left: 0;
+		}
+		.swap_btn {
+			width: 75px;
+			height: 70px;
+			position: absolute;
+			margin-top: -4.5rem;
+			right: 0rem;
+			border: none;
+			background-color: #d1d4e4;
+			img {
+				width: 35px;
+				height: 35px;
+				margin-top: -1rem;
+			}
 		}
 		.swap_icon {
 			width: 35px;
@@ -109,7 +122,6 @@
 			align-items: flex-start;
 			flex-direction: column;
 
-			background: linear-gradient(to right, #e2e2eb 75%, #D3D3E5 25%);
 			h6 {
 				font-family: 'Muli', sans-serif;
 				font-size: 1em;
@@ -131,10 +143,13 @@
 			left: 0;
 		}
 		.add {
-			width: 35px;
+			width: 85px;
+			height: 93.3px;
 			position: absolute;
-			margin-top: -2.7rem;
-			right: 2rem;
+			margin-top: -5.2rem;
+			right: -0.65rem;
+			border: none;
+			background-color: #d1d4e4;
 		}
 	}
 }
@@ -143,7 +158,7 @@
 
 
 .collect_container {
-	margin-bottom: 1.2rem;
+	padding-bottom: 1.2rem;
 	.collect_flex {
 		display: flex;
 		justify-content: center;
@@ -180,7 +195,6 @@
 			align-items: flex-start;
 			flex-direction: column;
 
-			background: linear-gradient(to right, #e2e2eb 75%, #D3D3E5 25%);
 			h6 {
 				font-family: 'Muli', sans-serif;
 				font-size: 1em;
@@ -202,10 +216,13 @@
 			left: 0;
 		}
 		.add {
-			width: 35px;
+			width: 85px;
+			height: 93.3px;
 			position: absolute;
-			margin-top: -2.7rem;
-			right: 2rem;
+			margin-top: -5.2rem;
+			right: -0.65rem;
+			border: none;
+			background-color: #d1d4e4;
 		}
 	}
 }
@@ -220,13 +237,14 @@
 }
 
 .see-more-btn {
+      padding: 0;
       border-radius: 50px;
       width: 11rem;
       height: 2.7rem;
-      border: none;
-      background-image: linear-gradient(bottom, rgb(45,213,204) 0%, rgb(45,213,204) 100%);
-      text-shadow: 0px -1px 0px rgba(0,0,0,.5);
-      box-shadow: 0px 4px 0px #2FB8BA, 0px 4px 0px rgba(0,0,0,.4), inset 0px 1px 0px rgba(255,255,255,.3), inset 0px 0px 3px rgba(255,255,255,.5);
+      background-color: #2dd5cc;
+      box-shadow: 0px 6px 0px #23B8BB;
+      border: #155658;
+      transition: all 100ms;
 
 
       font-family: 'Muli', sans-serif;
@@ -237,9 +255,14 @@
   }
 
     .see-more-btn:active {
-      background-image: linear-gradient(bottom, rgb(34, 170, 164) 0%, rgb(34, 170, 164) 100%);
-      text-shadow: 0px -1px 0px rgba(0,0,0,.5);
-      box-shadow: 0px 4px 0px #248d8f, 0px 4px 0px rgba(0,0,0,.4), inset 0px 1px 0px rgba(255,255,255,.3), inset 0px 0px 3px rgba(255,255,255,.5);
+      padding: 0;
+      border-radius: 50px;
+      width: 12rem;
+      background-color: #26B7B0;
+      box-shadow: 0px 3px 0px #1D989C;
+      border: #155658;
+      transform: translateY(3px);
+      transition: all 100ms;
     }
 
 	// .fade_bottom {
@@ -410,23 +433,324 @@ svg{
     margin: auto;
 }
 
-button{
-  // padding: 15px;
-  border-radius: 25px;
-  background-color: #2DD5CC;
-  font-size: 1rem;
-  font-weight: 500;
-  min-width: 140px;
-  box-shadow: 0px 3px 0px #23B8BB;
-  border: #155658;
-    
-}
-
 .bn-align{
   padding: 15px;
   display: flex;
   justify-content: center;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// SWAP START
+
+
+
+.swap {
+  display: flex; 
+  justify-content: space-around;
+  align-items: center;
+}
+
+.arrows {
+  position: absolute;
+  transform-origin: center center;
+  z-index: 1;
+  width: 40%;
+}
+
+.circle {
+  position: absolute;
+  transform: scale(0);
+  opacity: 0;
+  z-index: 1;
+  width: 40%;
+}
+
+.check {
+  position: absolute;
+  z-index: 2;
+  width: 90%;
+}
+
+.checkmark {
+  opacity: 0;
+  width: 90%;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes draw {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    opacity: 1;
+  }
+}
+
+// translate X, positive is right negative is left, Y postiive is up, negative is down 
+
+
+
+@keyframes grow-circle {
+  0% {
+    transform: scale(0);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1.35);
+    opacity: 1;
+  }
+}
+
+
+.swap_play {
+	.swap {
+		.checkmark {
+			  opacity: 0;
+			  stroke-dasharray: 390;
+			  stroke-dashoffset: 390;
+			  animation: draw 500ms ease-in-out forwards 750ms;
+		}	
+		  .arrows {
+			  animation: spin 900ms forwards ease-in-out;
+			  animation-iteration-count: 3;
+			  position: absolute;
+			  transform-origin: center center;
+			  z-index: 1;
+		}
+		.circle {
+			  position: absolute;
+			  transform: scale(0);
+			  opacity: 0;
+			  animation: grow-circle 700ms forwards ease-in 150ms;
+			  animation-iteration-count: 1;
+			  z-index: 1;
+		}
+	}
+}
+
+
+
+
+
+.check {
+  position: absolute;
+  z-index: 2;
+}
+
+
+
+
+// SVG STYLES START
+
+     .cls-one {
+        fill: #381345;
+      }
+
+      .cls-two {
+        fill: #fe5893;
+      }
+          
+      .cls-1 {
+        fill: url(#linear-gradient);
+      }
+
+
+     .cls-11 {
+        fill: #331543;
+      }
+
+      .cls-22 {
+        fill: #67336e;
+      }
+
+      .cls-111 {
+        fill: none;
+        stroke: #fe5893;
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+        stroke-width: 13px;
+      }
+
+      .cls-oneone {
+        fill: #381345;
+      }
+
+      .cls-twotwo {
+        fill: #fd4590;
+      }
+
+
+// SVG STYLES END
+
+// SWAP END
+
+
+
+
+
+
+
+
+
+
+
+// SWAP BOX v2 START
+
+
+@keyframes wag_two {
+  10% { 
+    top: 25px; right: -30px; transform: rotate(-20deg); 
+  }
+  20% {
+   top: 35px; right: -35px; transform: rotate(0); 
+ }
+  30% {
+   top: 25px; right: -30px; transform: rotate(-20deg); 
+ }
+  40% {
+   top: 35px; right: -35px; transform: rotate(0); 
+ }
+  50% {
+   top: 30px; right: -32px; transform: rotate(-10deg); 
+ }
+  60% { 
+    top: 35px; right: -35px; transform: rotate(0); 
+}
+}
+
+@keyframes move_one_two {
+  0% {
+    opacity: 0;
+    transform: translate(0px, 0px) rotate(0deg);
+  }
+  75% {
+    opacity: 1;
+    transform: translate(-17px, -7.5px) rotate(-2deg);
+  }
+  100% {
+  opacity: 0;
+  transform: translate(-20px, -10px) rotate(-8deg);
+  }
+}
+
+@keyframes move_two_two {
+  0% {
+    opacity: 0;
+    transform: translate(0px, 0px) rotate(0deg);
+  }
+  75% {
+    opacity: 1;
+    transform: translate(-13px, -5px) rotate(1deg);
+  }
+  100% {
+  opacity: 0;
+  transform: translate(-15px, -7px) rotate(5deg);
+  }
+}
+
+@keyframes move_three_two {
+  0% {
+    opacity: 0;
+    transform: translate(0px, 0px) rotate(0deg);
+  }
+  75% {
+    opacity: 1;
+    transform: translate(-9.5px, -12.3px) rotate(-2deg);
+  }
+  100% {
+  opacity: 0;
+  transform: translate(-13px, -14px) rotate(-4.5deg);
+  }
+}
+
+.music_pole_two {
+  transform: rotate(0deg);
+  transform-origin: bottom center;
+}
+
+
+.music_1_two {
+  opacity: 0;
+}
+
+.music_2_two {
+  opacity: 0;
+}
+
+.music_3_two {
+  opacity: 0;
+}
+
+
+
+
+
+.swap_inbox_play {
+  .slither {
+    transform-origin: 30% 40%;
+  }
+  .music_pole_two {
+  animation: wag_two 1s cubic-bezier(.29,.65,.99,1.43) forwards;
+  animation-iteration-count: 2;
+  transform-origin: bottom center;
+}
+.music_1_two {
+  opacity: 0;
+  animation: move_one_two .75s linear forwards;
+  animation-iteration-count: 2;
+}
+.music_2_two {
+  opacity: 0;
+  animation: move_two_two .75s linear forwards 250ms;
+  animation-iteration-count: 2;
+}
+.music_3_two {
+  opacity: 0;
+  animation: move_three_two .75s linear forwards 500ms;
+  animation-iteration-count: 2;
+}
+
+}
+
+// SWAP BOX v2 END
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -477,7 +801,6 @@ button{
 			align-items: flex-start;
 			flex-direction: column;
 
-			background: linear-gradient(to right, #e2e2eb 75%, #D3D3E5 25%);
 			h6 {
 				font-family: 'Muli', sans-serif;
 				font-size: 1.1em;
@@ -497,6 +820,11 @@ button{
 			position: absolute;
 			margin-top: -4.5rem;
 			left: 0;
+		}
+		.swap_btn {
+			img {
+				margin-right: -0.5rem;
+			}
 		}
 		.swap_icon {
 			width: 35px;
@@ -550,7 +878,6 @@ button{
 			align-items: flex-start;
 			flex-direction: column;
 
-			background: linear-gradient(to right, #e2e2eb 75%, #D3D3E5 25%);
 			h6 {
 				font-family: 'Muli', sans-serif;
 				font-size: 1.1em;
@@ -572,10 +899,13 @@ button{
 			left: 0;
 		}
 		.add {
-			width: 35px;
+			width: 85px;
+			height: 93.3px;
 			position: absolute;
-			margin-top: -2.7rem;
-			right: 2.4rem;
+			margin-top: -5.2rem;
+			right: -0.65rem;
+			border: none;
+			background-color: #d1d4e4;
 		}
 	}
 }
@@ -621,7 +951,6 @@ button{
 			align-items: flex-start;
 			flex-direction: column;
 
-			background: linear-gradient(to right, #e2e2eb 75%, #D3D3E5 25%);
 			h6 {
 				font-family: 'Muli', sans-serif;
 				font-size: 1.1em;
@@ -643,10 +972,13 @@ button{
 			left: 0;
 		}
 		.add {
-			width: 35px;
+			width: 85px;
+			height: 93.3px;
 			position: absolute;
-			margin-top: -2.7rem;
-			right: 2.4rem;
+			margin-top: -5.2rem;
+			right: -0.65rem;
+			border: none;
+			background-color: #d1d4e4;
 		}
 	}
 }
@@ -702,7 +1034,6 @@ button{
 			align-items: flex-start;
 			flex-direction: column;
 
-			background: linear-gradient(to right, #e2e2eb 75%, #D3D3E5 25%);
 			h6 {
 				font-family: 'Muli', sans-serif;
 				font-size: 1.1em;
@@ -722,6 +1053,11 @@ button{
 			position: absolute;
 			margin-top: -4.5rem;
 			left: 0;
+		}
+		.swap_btn {
+			img {
+				margin-right: -0.8rem;
+			}
 		}
 		.swap_icon {
 			width: 35px;
@@ -775,7 +1111,6 @@ button{
 			align-items: flex-start;
 			flex-direction: column;
 
-			background: linear-gradient(to right, #e2e2eb 75%, #D3D3E5 25%);
 			h6 {
 				font-family: 'Muli', sans-serif;
 				font-size: 1.1em;
@@ -797,10 +1132,13 @@ button{
 			left: 0;
 		}
 		.add {
-			width: 35px;
+			width: 85px;
+			height: 93.3px;
 			position: absolute;
-			margin-top: -2.7rem;
-			right: 2.7rem;
+			margin-top: -5.2rem;
+			right: -0.65rem;
+			border: none;
+			background-color: #d1d4e4;
 		}
 	}
 }
@@ -846,7 +1184,6 @@ button{
 			align-items: flex-start;
 			flex-direction: column;
 
-			background: linear-gradient(to right, #e2e2eb 75%, #D3D3E5 25%);
 			h6 {
 				font-family: 'Muli', sans-serif;
 				font-size: 1.1em;
@@ -868,10 +1205,13 @@ button{
 			left: 0;
 		}
 		.add {
-			width: 35px;
+			width: 85px;
+			height: 93.3px;
 			position: absolute;
-			margin-top: -2.7rem;
-			right: 2.7rem;
+			margin-top: -5.2rem;
+			right: -0.65rem;
+			border: none;
+			background-color: #d1d4e4;
 		}
 	}
 }

@@ -1,0 +1,97 @@
+$tcon-size: 10px !default;
+$tcon-transition: .3s !default;
+$tcon-jstransform: 'tcon-transform' !default;
+
+$tcon-plus-bg: transparent !default;
+$tcon-circle-radius: 30% !default;
+$tcon-plus-radius: ($tcon-size / 5) !default;
+$tcon-plus-color: black !default;
+$tcon-remove-color: black !default;
+
+.tcon {
+  appearance: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: $tcon-size;
+  transition: $tcon-transition;
+  user-select: none;
+  // width: $tcon-size;
+  background: transparent;
+  outline: none;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent;
+
+  > * {
+    display: block;
+  }
+
+  &:hover,
+  &:focus {
+    outline: none; // see issue #36 https://github.com/grayghostvisuals/transformicons/issues/36
+  }
+  &::-moz-focus-inner {
+    border: 0;
+  }
+}
+
+.tcon-plus {
+  height: $tcon-size;
+  position: relative;
+  transform: scale(.75);
+  width: $tcon-size;
+
+  &::before,
+  &::after {
+    content: "";
+    border-radius: 50px;
+    display: block;
+    width: 45%;
+    height: 4%;
+    position: absolute;
+    transition: $tcon-transition;
+    background: #371443;
+  }
+
+  &:after {
+    transform: rotate(90deg);
+  }
+}
+
+.tcon-plus--minus {
+  &.#{$tcon-jstransform} {
+    &::before {
+      transform: rotate(180deg) translate(0, 0);
+      width: 33.5%;
+    }
+
+    &::after {
+      transform: rotate(-180deg) translate(-10%, 0); 
+      width: 33.5%;
+    }
+  }
+}
+
+// see issue #7 https://github.com/grayghostvisuals/transformicons/issues/7#issuecomment-59813596
+.tcon-visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+
+  &:active,
+  &:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+  }
+}

@@ -82,7 +82,30 @@
 						<h6>All of Me</h6>
 					</div>
 					<img class="temp" src="graphics/legend.jpeg" alt="John Legend">
-					<img class="swap_icon" src="graphics/swap_arrow.svg" alt="Swap Icon">
+					<button id="swap_micro" class="swap_btn">
+
+					  	<div class="swap">
+						  	<svg class="check"  xmlns="http://www.w3.org/2000/svg" width="256" height="257.7" viewBox="-265 -275 800 800">
+							  <polyline class="cls-111 checkmark" points="6.5 165.5 88.5 247.5 249.5 6.5"/>
+							</svg>
+
+							<svg class="arrows" xmlns="http://www.w3.org/2000/svg" width="106.7" height="124.4" viewBox="0 0 106.7 124.4">
+								  <path class="cls-11" d="M599.08,1247.15c-2-1.27-4-2.45-6-3.81-13.65-9.67-19.45-23-18.1-39.55a13.4,13.4,0,0,1,.72-2c.19,8.5,2.49,15.24,7.78,20.74a26.78,26.78,0,0,0,19.35,8.54c11.68.27,23.09-7.37,26-17.64l-12.5-4.55,40.15-29.58,11.69,48.16-12.45-4.53c-.6,1-1.17,1.79-1.56,2.65-8.46,18.48-26.89,27.85-46.87,23.84a21.39,21.39,0,0,0-2.59-.21Z" transform="translate(-561.49 -1125.94)"/>
+								  <path class="cls-22" d="M629,1128c2.08,1.12,4.21,2.15,6.23,3.37,14.3,8.67,21,21.48,20.87,38a13.24,13.24,0,0,1-.58,2.05c-.79-8.42-3.57-15-9.24-20.06a26.92,26.92,0,0,0-19.9-7.16c-11.66.52-22.49,8.88-24.65,19.27l12.78,3.67-37.92,32.07-15.09-47,12.73,3.65c.53-1,1-1.86,1.37-2.73,7.12-18.91,24.83-29.46,45-26.84a21.49,21.49,0,0,0,2.59,0Z" transform="translate(-561.49 -1125.94)"/>
+							</svg>
+
+							<svg class="circle" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100.31" height="100.31" viewBox="0 0 100.31 100.31">
+							    <linearGradient id="linear-gradient" x1="50.15" y1="159.32" x2="50.15" y2="65.76" gradientUnits="userSpaceOnUse">
+							      <stop offset="0" stop-color="#fe5893"/>
+							      <stop offset="0.37" stop-color="#b73f77"/>
+							      <stop offset="1" stop-color="#381345"/>
+							    </linearGradient>
+							  <circle class="cls-1" cx="50.15" cy="50.15" r="50.15"/>
+							</svg>
+						</div>
+
+						<!-- <img class="swap_icon" src="graphics/swap_arrow.svg" alt="Swap Icon"> -->
+					</button>
 				</div>
 			</div>
 
@@ -98,7 +121,9 @@
 						<h6>All of Me</h6>
 					</div>
 					<img class="temp" src="graphics/legend.jpeg" alt="John Legend">
-					<h5 class="add">add</h5>
+					<button type="button" class="tcon add tcon-plus tcon-plus--minus" aria-label="add item">
+  						<span class="tcon-visuallyhidden">add item</span>
+					</button>
 				</div>
 
 				<div class="song_info">
@@ -107,7 +132,9 @@
 						<h6>All of Me</h6>
 					</div>
 					<img class="temp" src="graphics/legend.jpeg" alt="John Legend">
-					<h5 class="add">add</h5>
+					<button type="button" class="tcon add tcon-plus tcon-plus--minus" aria-label="add item">
+  						<span class="tcon-visuallyhidden">add item</span>
+					</button>
 				</div>
 
 				<div class="song_info">
@@ -116,7 +143,9 @@
 						<h6>All of Me</h6>
 					</div>
 					<img class="temp" src="graphics/legend.jpeg" alt="John Legend">
-					<h5 class="add">add</h5>
+					<button type="button" class="tcon add tcon-plus tcon-plus--minus" aria-label="add item">
+  						<span class="tcon-visuallyhidden">add item</span>
+					</button>
 				</div>
 
 
@@ -138,7 +167,9 @@
 						<h6>All of Me</h6>
 					</div>
 					<img class="temp" src="graphics/legend.jpeg" alt="John Legend">
-					<h5 class="add">add</h5>
+					<button type="button" class="tcon add tcon-plus tcon-plus--minus" aria-label="add item">
+  						<span class="tcon-visuallyhidden">add item</span>
+					</button>
 				</div>
 
 				<div class="song_info">
@@ -147,7 +178,9 @@
 						<h6>All of Me</h6>
 					</div>
 					<img class="temp" src="graphics/legend.jpeg" alt="John Legend">
-					<h5 class="add">add</h5>
+					<button type="button" class="tcon add tcon-plus tcon-plus--minus" aria-label="add item">
+  						<span class="tcon-visuallyhidden">add item</span>
+					</button>
 				</div>
 
 				<div class="song_info">
@@ -157,8 +190,9 @@
 						<h6>All of Me</h6>
 					</div>
 					<img class="temp" src="graphics/legend.jpeg" alt="John Legend">
-					<button class="add">add</button>
-
+					<button type="button" class="tcon add tcon-plus tcon-plus--minus" aria-label="add item">
+  						<span class="tcon-visuallyhidden">add item</span>
+					</button>
 				</div>
 				
 				<div class="see_flex">
@@ -185,3 +219,6 @@
 </div>
 
 		<script src="js/modalswap.js"></script>
+		<script src="js/transformicon.js"></script>
+		<script>transformicons.add('.tcon')</script>
+		<script src="js/main.js"></script>

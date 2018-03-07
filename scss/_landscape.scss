@@ -28,6 +28,7 @@
 		align-items: center;
 		width: 100%;
 		top: 80%;
+		margin-top: 2.5rem;
 		position: absolute;
 		h3 {
 	      font-family: 'Averia Sans Libre', cursive;
@@ -41,34 +42,26 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		margin-right: 2rem;
 		.left_phone {
-			margin-top: 30%;
-			animation: swivel_left alternate infinite 1.6s;
+			margin-top: 25%;
+			animation: swivel_right 1.6s infinite .75s;
+			transform: rotate(180deg);
 			width: 45%;
+			transform-origin: center center;
+			#phone_one {
+				transform-origin: center center;
+			}
 		}
 	}
 
-
-	#phone_one {
-		transform-origin: bottom left;
-	}
-
-	#phone_two {
-		transform-origin: bottom right;
-	}
-
-	@keyframes swivel_left {
-		0% {
-			transform: rotate(0deg);
-		}
-		100% {
-			transform: rotate(90deg);
-		}
-	}
 
 	@keyframes swivel_right {
 		0% {
-			transform: rotate(0deg);
+			transform: rotate(180deg);
+		}
+		20% {
+			transform: rotate(180deg);
 		}
 		100% {
 			transform: rotate(90deg);
