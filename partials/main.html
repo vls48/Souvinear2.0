@@ -57,16 +57,18 @@
 						<h6>{{ x.CONCERT_DATE }}</h6>
 						<h6>{{ x.VENUE }}</h6>
                         </div>
-                        <img class="legend" src="graphics/legend.jpeg" alt="John Legend">
-                        <div ng-controller="editDisplayCtrl">
+                        
+                        <div>
+                        <img class="legend" src="graphics/legend.jpeg" alt="John Legend" ng-click="getEntryInfo()">
                         <form ng-submit="getEditInfo()" id="edit_entry">
-<!--                        <a href="#/edit-entry">-->
+                        
                         <p>
                           <input type="text" name="headliner" id="entered_headliner" value="{{ x.HEADLINER}}" class="uneeded">
                         </p> 
                         <p>
                           <input type="date" name="concert_date" id="entered_concert_date" value="{{ x.CONCERT_DATE }}" class="uneeded">
-                        </p>    
+                        </p> 
+<!--                        <a href="#/edit-entry">-->
                         <button type="submit" name="submit" >  
                             <p>EDIT</p>             
 <!--					   <img class="legend" src="graphics/legend.jpeg" alt="John Legend">-->

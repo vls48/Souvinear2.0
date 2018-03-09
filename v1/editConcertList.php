@@ -6,14 +6,18 @@ require_once("includes/initialize.php");
 
 $url = "php://input";
 $contents = file_get_contents($url); 
-$contents = utf8_encode($contents); 
-$postdata = json_decode($contents); 
+//$contents = utf8_encode($contents); 
+$postdata = json_decode($contents);
 
 $headliner = $postdata->{'headliner'};
 
 $concert_date = $postdata->{'concert_date'};
 
-$result = $connection->query("SELECT * FROM concert_info WHERE user_id = 24 AND headliner = ' {$headliner}' AND concert_date = '{$concert_date}'");
+//echo print_r("SELECT * FROM concert_info WHERE user_id = 24 AND headliner = '{$headliner}' AND concert_date = '{$concert_date}'");
+
+
+
+$result = $connection->query("SELECT * FROM concert_info WHERE user_id = 24 AND headliner = '{$headliner}' AND concert_date = '{$concert_date}'");
 
 $outp = "";
 while($rs = $result->fetch_array(MYSQLI_ASSOC)) {

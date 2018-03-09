@@ -12,42 +12,6 @@ console.log(concert_info);
 document.getElementById("message").textContent = "";
 
     
-//data = {
-//    'headliner' : $scope.formData.headliner,
-//    'supporting_act' : $scope.formData.supporting_act,
-//    'venue' : $scope.formData.venue,
-//    'concert_date' : $scope.formData.concert_date,
-//    'concert_time' : $scope.formData.concert_time,
-//    'entry' : $scope.formData.entry
-//}
-//    
-//var request = $http({
-//    method: "POST",
-//    url: "../angular/v1/concert_processing.php",
-//    data: {
-//        headliner: $scope.headliner,
-//        supporting_act: $scope.supporting_act,
-//        venue: $scope.venue,
-//        concert_date: $scope.concert_date,
-//        concert_time: $scope.concert_time,
-//        entry: $scope.entry
-//        
-//    },
-//    headers: { 'Content-Type': 'application/x-www-form-urlencoded' }
-//});
-    
-//$http({
-//    url: "../angular/v1/concert_processing.php",
-//    method: "POST",
-//    headers: {'Content-Type': 'application/x-www-form-urlencoded'},
-//    data: $.param($scope.formData)
-//}).success(function(data, status, headers, config, response) {
-//    document.getElementById("message").textContent = "Concert entry saved.";
-//
-//}).error(function(data, status, headers, config) {
-//
-//});
-    
 $http({
     url: "../angular/v1/concert_processing.php",
     method: "POST",

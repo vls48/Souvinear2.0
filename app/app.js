@@ -1,4 +1,4 @@
-var app = angular.module('myApp', ['ngRoute', 'ngAnimate']);
+var app = angular.module('myApp', ['ngRoute', 'ngAnimate', 'ngStorage']);
 
 app.config(['$routeProvider',
   function ($routeProvider) {
@@ -69,6 +69,11 @@ app.config(['$routeProvider',
                 templateUrl: 'partials/edit-entry.html'
 //                controller: 'authCtrl' 
             })
+            .when('/concert-entry', {
+                title: 'pin a song',
+                templateUrl: 'partials/concert-entry.html'
+//                controller: 'authCtrl' 
+            })
             .otherwise({
                 redirectTo: '/login'
             });
@@ -76,7 +81,7 @@ app.config(['$routeProvider',
 
 //save data between pages
 app.factory('dataService', function() {
- var savedData = {}
+ var savedData = {};
  function set(data) {
    savedData = data;
  }

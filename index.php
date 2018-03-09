@@ -67,6 +67,7 @@
       <script src="js/angular-route.min.js"></script>
       <script src="js/angular-animate.min.js" ></script>
       <script src="app/app.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/ngStorage/0.3.10/ngStorage.min.js"></script>
     <!-- JS to change config variables -->
 	<script src="https://spotify-player.herokuapp.com/spotify-player.js"></script>
 <!--	<script src="js/spotify.js"></script> -->
@@ -84,8 +85,8 @@
     <!-- controllers -->
       <script src="app/controllers/mainCtrl.js"></script>
       <script src="app/controllers/editCtrl.js"></script>
-      <script src="app/controllers/editDisplayCtrl.js"></script>
       <script src="app/controllers/addCtrl.js"></script>
+      <script src="app/controllers/concertCtrl.js"></script>
     <!--
       <script src="app/controllers/authCtrl.js"></script>
       <script src="app/controllers/loginCtrl.js"></script>

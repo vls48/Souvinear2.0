@@ -1,43 +1,43 @@
 <div class="port_wrap">
-    <div ng-controller="editDisplayCtrl">
+    <div ng-controller="editCtrl">
       <div id="gather">
           <div class="new-entry-bar">
       		<h5>you're editing an entry</h5>
       	</div>
-		 <form ng-submit="edit_concert()">
+		 <form ng-submit="edit_concert()" ng-repeat="x in entries">
 		 <div id="headliner-input-container" class="first-container">
 			 <div class="input-icons-container">
 				 <img class="background-icon head" src="graphics/headliner_icon.svg">
 			 </div>
-          	<input type="text" name="headliner" placeholder="Headliner" id="headliner" value="{{ x.HEADLINER }}" ng-model="formData.headliner" class="text-input">
+          	<input type="text" name="headliner" placeholder="Headliner" id="headliner" value="{{ x.HEADLINER }}" class="text-input">
 		  </div>
 		  
 		  <div id="opener-input-container" class="entry-container-add">
 			  <div class="input-icons-container">
 				 <img class="background-icon" src="graphics/opener_icon.svg">
 			 </div>
-          	<input type="text" name="supporting_act"  placeholder="Supporting Act" id="supporting_act" class="text-input" value="{{ x.SUPPORTING_ACT}}" ng-model="formData.supporting_act">
+          	<input type="text" name="supporting_act"  placeholder="Supporting Act" id="supporting_act" class="text-input" value="{{ x.SUPPORTING_ACT}}">
 		  </div>
         
 		<div id="venue-input-container" class="entry-container-add">
 			<div class="input-icons-container">
 				 <img class="background-icon" src="graphics/event_title_icon.svg">
 			 </div>
-          <input type="text" name="venue" placeholder="Venue" id="venue" value="{{ x.VENUE}}" ng-model="formData.venue" class="text-input">
+          <input type="text" name="venue" placeholder="Venue" id="venue" value="{{ x.VENUE}}" class="text-input">
         </div>
 		  
 		<div id="date-input-container" class="entry-container-add">
 			<div class="input-icons-container">
 				 <img class="background-icon" src="graphics/date_icon.svg">
 			 </div>
-          <input type="date" name="concert_date" id="concert_date" value="{{ x.CONCERT_DATE}}" ng-model="formData.concert_date" class="text-input" placeholder="date">
+          <input type="date" name="concert_date" id="concert_date" value="{{ x.CONCERT_DATE}}" class="text-input" placeholder="date">
 		</div>
      	
         <div id="date-input-container" class="entry-container-add">
 			<div class="input-icons-container">
 				 <img class="background-icon" src="graphics/date_icon.svg">
 			 </div>
-          <input type="time" name="concert_time" id="concert_time" value="{{ x.CONCERT_TIME}}" ng-model="formData.concert_time" class="text-input" placeholder="">
+          <input type="time" name="concert_time" id="concert_time" value="{{ x.CONCERT_TIME}}" class="text-input" placeholder="">
 		</div>  
           
 <!--
@@ -50,7 +50,7 @@
 			<div class="input-icons-container">
 				 <img class="background-icon" src="graphics/note_icon.svg">
 			 </div>
-       <textarea type="text" name="entry" id="entry" value="{{ x.ENTRY}}" ng-model="formData.entry" class="textarea"></textarea>
+       <textarea type="text" name="entry" id="entry" value="{{x.ENTRY}}" class="textarea"></textarea>
 		</div>
 
 		<div id="collected-songs">
@@ -67,7 +67,7 @@
 		</div>
              
 		<div id="save-entry-container">
-			<button type="submit" name="submit">save this entry<img src="graphics/lock_transp.svg" alt="Lock Icon"></button>
+			<button type="submit" name="submit">update this entry<img src="graphics/lock_transp.svg" alt="Lock Icon"></button>
 		</div>
         </form>
     </div>
@@ -75,11 +75,7 @@
     <div id="message"></div>
     </div>
     
-        <form action='php/logout_processing.php' method='post'>
-    <input type='submit' name='submit' value='Log Out'>
-    </form>
-    
     <div class="add_entry_cancel">
-		  <a href="index.php">Cancel</a>
+		  <a href="#/main">Cancel</a>
 	</div>
 	</div>
