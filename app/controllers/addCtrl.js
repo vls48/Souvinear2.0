@@ -20,6 +20,12 @@ $http({
 }).success(function(data, status, headers, config, response) {
     document.getElementById("message").textContent = "Concert entry saved.";
     console.log("Data: " + data);
+    window.setTimeout(function(){
+
+        // Move to a new location or you can do something else
+        window.location.replace("#/main");
+
+    }, 3000);
 
 }).error(function(data, status, headers, config) {
 

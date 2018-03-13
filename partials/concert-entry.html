@@ -1,3 +1,4 @@
+
 <div ng-controller="concertCtrl"> 
   
 <div ng-repeat="x in entries">
@@ -121,9 +122,13 @@
     </g>
 </svg>
 </div>
-<div id="edit_wrap">
-  <p>edit this entry</p>
-</div>
+		
+        <div id="save-entry-container" ng-controller="deleteCtrl">
+            <button type="submit" name="submit" ng-click="delete_concert()">delete this entry<img src="graphics/lock_transp.svg" alt="Lock Icon"></button>
+            <br>
+            <div id="message"></div>
+		</div>
+
 </div>
     
 </div>

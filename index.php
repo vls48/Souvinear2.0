@@ -87,6 +87,7 @@
       <script src="app/controllers/editCtrl.js"></script>
       <script src="app/controllers/addCtrl.js"></script>
       <script src="app/controllers/concertCtrl.js"></script>
+      <script src="app/controllers/deleteCtrl.js"></script>
     <!--
       <script src="app/controllers/authCtrl.js"></script>
       <script src="app/controllers/loginCtrl.js"></script>

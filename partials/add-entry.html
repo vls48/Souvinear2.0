@@ -1,3 +1,9 @@
+<style>
+    #nav{
+        display: none;
+    }
+</style>
+
 <div class="port_wrap">
     <div ng-controller="addCtrl">
       <div id="gather">
@@ -69,7 +75,7 @@
 		</div>
              
 		<div id="save-entry-container">
-			<button type="submit" name="submit">save this entry<img src="graphics/lock_transp.svg" alt="Lock Icon"></button>
+            <button type="submit" name="submit">save this entry<img src="graphics/lock_transp.svg" alt="Lock Icon"></button>
 		</div>
         </form>
     </div>
@@ -77,11 +83,7 @@
     <div id="message"></div>
     </div>
     
-        <form action='php/logout_processing.php' method='post'>
-    <input type='submit' name='submit' value='Log Out'>
-    </form>
-    
     <div class="add_entry_cancel">
-		  <a href="index.php">Cancel</a>
+		  <a href="#/main">Cancel</a>
 	</div>
 	</div>
